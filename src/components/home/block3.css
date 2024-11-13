@@ -1,0 +1,12 @@
+/* Custom class to change the color of list markers */
+.list-disc-red {
+    --marker-color: red;
+    /* Define a custom property for marker color */
+}
+
+.list-disc-red li::marker {
+    color: var(--marker-color);
+    /* Apply the custom color to the list marker */
+    content: "•";
+    /* Ensures the marker is a disc */
+}
