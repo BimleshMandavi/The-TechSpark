@@ -1,16 +1,17 @@
+import React from 'react';
 
-import React from 'react'
-
-const nav2 = () => {
-  
+const Nav2 = () => {
   return (
-    <div className='bg-[#ef6344d6] flex items-center justify-center bg-opacity-[80%]  w-[100vw]'>
-     
-     <div className='h-12 flex items-center'>
-      <h1 className='text-md text-center text-white'>Get a professional static websites in Chhattisgarh for @9999 with one year of free maintenance.</h1>
-     </div>
+    <div className='bg-[#ef6344d6] flex items-center justify-center bg-opacity-[80%] w-[100vw] overflow-hidden'>
+      <div className='h-12 flex items-center whitespace-nowrap'>
+        <div className='animate-scroll'>
+          <h1 className='text-md text-center text-white'>
+            Get a professional static website in Chhattisgarh for @9999 with one year of free maintenance.
+          </h1>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default nav2
+export default Nav2;
