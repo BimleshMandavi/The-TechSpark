@@ -5,6 +5,7 @@ import Navbar from "@/layouts/navbar/page";
 import FooterPage from "@/layouts/footer/page";
 import Sidebar from "@/layouts/sidebar/page";
 import Titlebar from "@/layouts/titlebar/page"
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
         <div className="flex "> 
           <div className="flex-grow reletive">
             {children}
+            <Analytics />
           </div>
               <div className="absolute top-0">
         <Navbar />
