@@ -8,7 +8,7 @@ import Case_study from "@/components/home/case_study";
 export default function Home() {
   return (
     <><header>
-<link rel="icon" type="image/png" href="/TSlogo2.png" />
+<link rel="icon" type="image/png" href="/Tech.png" />
   
     </header>
     <div className="pb-7 w-full h-full  ">
