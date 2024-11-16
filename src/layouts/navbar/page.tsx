@@ -12,7 +12,7 @@ const pathname = usePathname()
   return (
     <div className=' text-white flex justify-between items-center bg-[#000]   w-[100vw]'>
       <Link className='flex justify-between px-4 py-4 ' href="/">
-        <Image src="/TSlogo2.png" 
+        <Image src="/Tech.png" 
         alt='Tech Spark Logo'
         height={70}
         width={85}
