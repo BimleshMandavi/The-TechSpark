@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
     email: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { id: any; value: any; }; }) => {
     const { id, value } = e.target;
     setFormValues({ ...formValues, [id]: value });
 
@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (!errors.phone && !errors.email && formValues.phone && formValues.email) {
       // EmailJS integration
