@@ -78,7 +78,7 @@ const ContactPage: React.FC = () => {
               <h1>Let’s discuss your project</h1>
             </div>
 
-            <div className='flex flex-col justify-between gap-8 sm:flex-row sm:pt-8'>
+            <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row xl:flex-col justify-between gap-8 sm:pt-8'>
               <div>
                 <Box
                   component="form"
@@ -168,7 +168,7 @@ const ContactPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className='w-[168px] sm:w-[50%] sm:h-[50%]'>
+              <div className='w-[168px] sm:w-[50%]'>
                 <MyComponent />
               </div>
             </div>

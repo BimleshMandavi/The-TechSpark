@@ -42,13 +42,14 @@ const serviceBlocks = [
 
 const ServiceGrid = () => {
   return (
-    <div className="w-full flex flex-wrap justify-between gap-7 lg:mx-5">
-      {serviceBlocks.map((block, index) => (
+    // <div className="w-full flex flex-wrap justify-between gap-7 lg:mx-5">
+    <div className="w-full grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"> 
+    {serviceBlocks.map((block, index) => (
         <div
           key={index}
           className="flex hover:bg-[#0C487B] hover:text-white sm:w-[496px] sm:h-[386px] md:w-[386px] flex-col gap-2 border-r-[10px] border-b-[10px] border-[#0C487BD4] hover:border-[#335c80d4] rounded-[14px] p-4 my-4"
         >
-          <div className="flex">
+          <div className="flex items-center justify-center w-12 h-12 rounded-full">
             <div className="border-2 border-red-500 rounded-full p-2">
               <div className="rounded-full overflow-hidden">
                 <Image src={block.iconSrc} alt={block.title} width={24.3} height={24.3} />
@@ -64,3 +65,4 @@ const ServiceGrid = () => {
 };
 
 export default ServiceGrid;
+

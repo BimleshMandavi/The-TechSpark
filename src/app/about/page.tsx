@@ -1,8 +1,11 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
-
+import Template from '../Template'
+import {motion} from 'framer-motion'
 const AboutPage = () => {
   return (
+    <Template>
     <div className=' sm:h-full sm:w-full'>
       <div className="relative h-[640px] w-full bg-custom-bg bg-cover bg-center text-white">
       <div className="absolute w-full inset-0 bg-black bg-opacity-85 sm:bg-opacity-70" />
@@ -14,8 +17,17 @@ const AboutPage = () => {
         Welcome to Tech Spark, your dedicated partner in software development and IT consulting. We specialize in empowering startups and scale-ups to achieve their business goals through innovative technology solutions. Our mission is to transform your vision into reality, ensuring seamless scalability, enhanced customer experiences, and the creation of cutting-edge products and processes.
         </p>
         <div className="mt-10 flex justify-between pr-3">
-         <div className="w-[220px] h-[44px] bg-[#0C487B] flex justify-evenly items-center rounded cursor-pointer">
-           <div> <button>EXPLORE OPENINGS</button></div>
+         {/* <div className="w-[220px] h-[44px] bg-[#0C487B] flex justify-evenly items-center rounded cursor-pointer"> */}
+         <div className="w-[220px] h-[44px] flex justify-evenly items-center rounded cursor-pointer">
+           {/* <div> <button>EXPLORE OPENINGS</button></div> */}
+           <a href='https://github.com/BimleshMandavi/The-TechSpark'>
+           <motion.button 
+           whileHover={{scale:1.1}}
+           whileTap={{scale:0.9}}
+           className='px-4 py-2 bg-[#0C487B] text-white rounded-md'>
+           EXPLORE OPENINGS
+           </motion.button>
+           </a>
            </div>
         </div>
         </div>
@@ -92,18 +104,86 @@ const AboutPage = () => {
       <div className='bg-[#050505]  h-[1011px] flex flex-col px-4  items-center text-white gap-3'>
         <div className='sm:flex sm:gap-5'>
         <div className='text-center pt-9'>
-          <Image className='sm:w-[641px] sm:h-[518px] px-4' src="/mission1.svg" alt='mission' width={366} height={245} />
+          {/* <Image className='sm:w-[641px] sm:h-[518px] px-4' src="/mission1.svg" alt='mission' width={366} height={245} /> */}
+
+          <div className='pt-8 pl-5 sm:w-full'>
+
+{/* <Image className='sm:w-[1614px] sm:h-[538px] p-8' src='/leaders.svg' alt='lead' height={132} width={496} /> */}
+<motion.img
+className='sm:w-[1614px] sm:h-[538px] p-8' height={132} width={496}
+
+src="/mission1.svg"
+alt="Hover Effect"
+style={{
+
+borderRadius: "10px",
+cursor: "pointer",
+}}
+whileHover={{
+scale: 1.05,       // Slightly zoom in on hover
+// rotate: 5,        // Add a slight tilt
+opacity: 0.8,     // Reduce opacity on hover
+}}
+transition={{
+type: "spring",
+stiffness: 200,
+damping: 10,
+}}
+/>
+
+</div>
         </div>
         <div className='w-[358px] sm:w-[784px] sm:pt-10 sm:pl-6'>
           <h1 className='text-[25px] font-bold sm:text-[50px] px-4 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
           <p  className='text-[14px] px-4'>ThinkHumble is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to </p>
         <div className='pt-4'>
-          <Image className='sm:w-[894px] px-4' src="/mission2.svg" alt='mission' width={366} height={245} />
+          {/* <Image className='sm:w-[894px] px-4' src="/mission2.svg" alt='mission' width={366} height={245} /> */}
+          <motion.img
+className='sm:w-[894px] px-4' width={366} height={245}
+
+src="/mission2.svg"
+alt="Hover Effect"
+style={{
+
+borderRadius: "10px",
+cursor: "pointer",
+}}
+whileHover={{
+scale: 1.1,       // Slightly zoom in on hover
+// rotate: 5,        // Add a slight tilt
+opacity: 0.8,     // Reduce opacity on hover
+}}
+transition={{
+type: "spring",
+stiffness: 200,
+damping: 10,
+}}
+/>
         </div>
         </div>
         </div>
         <div>
-            <Image className='sm:mr-[845px] sm:w-[641px] sm:h-[293px] px-4' src="/mission3.svg" alt='mission' width={366} height={245} />
+            {/* <Image className='sm:mr-[845px] sm:w-[641px] sm:h-[293px] px-4' src="/mission3.svg" alt='mission' width={366} height={245} /> */}
+            <motion.img
+  className='sm:mr-[845px] sm:w-[641px] sm:h-[293px] px-4' src="/mission3.svg"  width={366} height={245}
+  alt="Hover Effect"
+  style={{
+
+  borderRadius: "10px",
+  cursor: "pointer",
+  }}
+  whileHover={{
+  scale: 1.05,       // Slightly zoom in on hover
+ // rotate: 5,        // Add a slight tilt
+  opacity: 0.8,     // Reduce opacity on hover
+ }}
+ transition={{
+ type: "spring",
+ stiffness: 200,
+ damping: 10,
+ }}
+/>
+        
         </div>
       </div>
       <div className='bg-[#050505]  h-[1211px] sm:h-[345px]  text-white flex flex-col  px-8 '>
@@ -150,11 +230,61 @@ const AboutPage = () => {
         </div>
         <div className='flex pt-4  w-full justify-between pl-3'>
           <Image className='w-[50%]' src="men1.svg" width={177.51} height={286} alt='grp'/>
-          <Image className='w-[50%]' src="women1.svg" width={177.51} height={286} alt='grp'/>
+          
+          {/* <motion.img
+className='w-[50%]' width={177.51} height={286} 
+
+src="men1.svg" 
+alt="Hover Effect"
+style={{
+
+borderRadius: "10px",
+cursor: "pointer",
+}}
+whileHover={{
+scale: 1.05,       // Slightly zoom in on hover
+// rotate: 5,        // Add a slight tilt
+opacity: 0.8,     // Reduce opacity on hover
+}}
+transition={{
+type: "spring",
+stiffness: 200,
+damping: 10,
+}}
+/> */}
+
+
+ <Image className='w-[50%]' src="women1.svg" width={177.51} height={286} alt='grp'/>
+
+{/* 
+          <motion.img
+className='w-[50%]'  width={177.51} height={286} 
+
+src="women1.svg" 
+alt="Hover Effect"
+style={{
+
+borderRadius: "10px",
+cursor: "pointer",
+}}
+whileHover={{
+scale: 1.05,       // Slightly zoom in on hover
+// rotate: 5,        // Add a slight tilt
+opacity: 0.8,     // Reduce opacity on hover
+}}
+transition={{
+type: "spring",
+stiffness: 200,
+damping: 10,
+}}
+/> */}
+
+          
         </div>
       </div>
     </div>
     </div>
+    </Template>
   )
 }
 

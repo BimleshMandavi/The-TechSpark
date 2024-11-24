@@ -30,7 +30,7 @@ const pathname = usePathname()
        <div className='my-5 mx-5'>
         <Link className={pathname === "/contact"? 'text-[#ef6344d6]':"text-white"}  href="contact">
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
-      <Fab variant="extended" size="medium" color="primary">
+      <Fab className='hover:border-red-500 bg-white hover:text-black text-black' variant="extended" size="medium" color="primary">
   Get Started
 </Fab>
     </Box>

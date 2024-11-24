@@ -1,6 +1,7 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
-
+import {motion} from "framer-motion";
 const BlogPage = () => {
   return (
     <div className='h-full w-full'>
@@ -10,21 +11,46 @@ const BlogPage = () => {
         <div className=' h-[528px] flex flex-col justify-center sm:pl-10  inset-0 bg-black bg-opacity-40 px-6'>
           <div className='sm:w-[650px] absolute top-[280px] sm:left-[110px] '>
             <h4 className='text-[16px] text-[#0C487B] w-[142px] h-[24px]'>LATEST BLOGS</h4>
-          <h1 className='text-[30px] font-black'>Blog & News</h1>
+          <h1 className='text-[30px] font-black  hover:text-purple-600'>Blog & News</h1>
           <div className='text-[16px]'>
+            <motion.div
+            initial={{opacity:0, y:100}}
+            animate={{opacity:1, y:10}}
+            transition={{duration:0.5}}
+            >
           <span className='w-[80px] font-bold'>TECH PYRO</span> is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.
+          </motion.div>
           </div> 
           </div>    
         </div>
         <div className=' bg-black  flex flex-col sm:flex-row sm:gap-5 justify-center items-center pb-8'>
             <div className='mt-8 w-[368px] '>
           <div>
-            <Image src="/grp-img1.svg" width={368} height={216} alt="grp1" />
+            {/* <Image src="/grp-img1.svg" width={368} height={216} alt="grp1" /> */}
+
+            <motion.img
+             className='sm:w-[368] sm:h-[216] p-1' 
+                       src="/grp-img1.svg"
+                        alt="Hover Effect"
+                        style={{cursor:'pointer'}}
+                         whileHover={{
+                         scale: 1.05,       // Slightly zoom in on hover
+                        //  rotate: 5,        // Add a slight tilt
+                         opacity: 0.8,     // Reduce opacity on hover
+                            }}
+                          transition={{
+                         type: "spring",
+                         stiffness: 200,
+                         damping: 20,
+                            }}
+              />
           </div>
           <div className='bg-white h-[142px] text-black'>
             <div className='flex p-4 gap-8'>
             <div className='flex gap-1'>
               <Image src="/like.svg" width={17} height={17} alt='like'/>
+              
+              
               <span className='text-[12px]'>2,345 Likes</span>
             </div>
              <div className='flex gap-1'>
@@ -48,7 +74,26 @@ const BlogPage = () => {
         </div>
          <div className='mt-8 w-[368px]'>
           <div>
-            <Image src="/grp-img2.svg" width={368} height={216} alt="grp1" />
+            {/* <Image src="/grp-img2.svg" width={368} height={216} alt="grp1" /> */}
+            <motion.img
+             className='sm:w-[368] sm:h-[216] p-1' 
+                       src="/grp-img2.svg"
+                        alt="Hover Effect"
+                        style={{
+                          cursor: "pointer",
+                          }}
+                         whileHover={{
+                         scale: 1.05,       // Slightly zoom in on hover
+                        //  rotate: 5,        // Add a slight tilt
+                         opacity: 0.8,     // Reduce opacity on hover
+                            }}
+                          transition={{
+                         type: "spring",
+                         stiffness: 200,
+                         damping: 20,
+                            }}
+              />
+          
           </div>
           <div className='bg-white h-[142px] text-black'>
             <div className='flex p-4 gap-8'>
@@ -77,7 +122,24 @@ const BlogPage = () => {
         </div>
          <div className='mt-8 w-[368px]'>
           <div>
-            <Image src="/grp-img3.svg" width={368} height={216} alt="grp1" />
+            {/* <Image src="/grp-img3.svg" width={368} height={216} alt="grp1" /> */}
+          
+            <motion.img
+             className='sm:w-[368] sm:h-[216] p-1' 
+                       src="/grp-img3.svg"
+                        alt="Hover Effect"
+                        style={{cursor:'pointer'}}
+                         whileHover={{
+                         scale: 1.05,       // Slightly zoom in on hover
+                        //  rotate: 5,        // Add a slight tilt
+                         opacity: 0.8,     // Reduce opacity on hover
+                            }}
+                          transition={{
+                         type: "spring",
+                         stiffness: 200,
+                         damping: 20,
+                            }}
+              />
           </div>
           <div className='bg-white h-[142px] text-black'>
             <div className='flex p-4 gap-8'>
@@ -106,7 +168,24 @@ const BlogPage = () => {
         </div>
          <div className='mt-8 w-[368px]'>
           <div>
-            <Image src="/grp-img4.svg" width={368} height={216} alt="grp1" />
+            {/* <Image src="/grp-img4.svg" width={368} height={216} alt="grp1" /> */}
+          
+            <motion.img
+             className='sm:w-[368] sm:h-[216] p-1' 
+                       src="/grp-img4.svg"
+                        alt="Hover Effect"
+                        style={{cursor:'pointer'}}
+                         whileHover={{
+                         scale: 1.05,       // Slightly zoom in on hover
+                        //  rotate: 5,        // Add a slight tilt
+                         opacity: 0.8,     // Reduce opacity on hover
+                            }}
+                          transition={{
+                         type: "spring",
+                         stiffness: 200,
+                         damping: 20,
+                            }}
+              />
           </div>
           <div className='bg-white h-[142px] text-black'>
             <div className='flex p-4 gap-8'>
@@ -146,7 +225,14 @@ const BlogPage = () => {
         <div className='w-[368px] h-[229px] flex flex-col justify-evenly items-center pl-5 text-center'>
           <h1 className='text-[28px] font-bold '>Join our team to be a part of our story</h1>
           <p className='text-[12px] font-semibold '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          <button className='text-[12px] font-bold w-[113px] h-[36px] bg-[#0C487B] rounded'>JOIN NOW</button>
+          {/* <button className='text-[12px] font-bold w-[113px] h-[36px] bg-[#0C487B] rounded'>JOIN NOW</button> */}
+          <motion.button 
+           whileHover={{scale:1.1}}
+           whileTap={{scale:0.9}}
+         className='text-[12px] font-bold w-[113px] h-[36px] bg-[#0C487B] rounded'
+           >
+              JOIN NOW
+           </motion.button>
         </div>
       </div>
      </div>

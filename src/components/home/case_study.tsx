@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from "next/image";
 import Accordion from '@mui/material/Accordion';
@@ -8,6 +9,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { Avatar } from "@mui/material";
 import Work_cards from '../cards/work_cards';
 import Services_card from '../cards/services_cards';
+import{motion} from 'framer-motion'
 
 const Case_study = () => {
   return (
@@ -40,7 +42,7 @@ font-bold tracking-widest">FAQ</h4>
         <div className="py-3 sm:w-[50%]">
           <Image className="sm:w-full sm:h-full" src="/faq.svg" alt="FAQ" width={471.73} height={219.1} />
         </div>
-        <div className="sm:flex sm:flex-col">
+        <div className="flex sm:flex-col">
         <div className="py-4">
            <div className="flex flex-col gap-2 py-2">
          <Accordion>
@@ -143,8 +145,15 @@ font-bold tracking-widest">FAQ</h4>
          </div>
          <div className="bg-[#0C487B] sm:w-[50%]  text-white h-[200px] sm:h-[402px] flex flex-col justify-center items-center text-center">
           <h1 className="font-bold text-[28px]">Energy of a start-up combined with 30 years of experience.</h1>
-          <div className="hidden sm:flex sm:justify-center bg-white text-[#FF7F0E] rounded-3xl sm:w-[216px] sm:h-[54px] sm:mt-4 ">
-            <button>See Job Vacancies</button>
+          <div>
+            {/* <button>See Job Vacancies</button> */}
+            <motion.button 
+           whileHover={{scale:1.1}}
+           whileTap={{scale:0.9}}
+           className="hidden sm:flex sm:justify-center bg-white text-[#FF7F0E] rounded-3xl sm:w-[216px] sm:h-[54px] sm:mt-4"
+           >
+             See Job Vacancies
+           </motion.button>
           </div>
          </div>
       </div>
@@ -157,9 +166,12 @@ font-bold tracking-widest">FAQ</h4>
             is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.
           </p>
         </div>
-        <div className="sm:flex sm:justify-evenly sm:gap-5">
-        <div className="border-2 border-[#717171] sm:w-[368px] h-[314px] p-4 rounded-lg  mt-5 ">
-        <div className=" flex gap-4 my-4 py-5">
+        
+        {/* this is the responsive gridew */}
+        <div className="sm:flex sm:justify-evenly sm:gap-5 ">
+        {/* <div className="w-full grid gap-4 p-2 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4"> */}
+        <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] sm:w-[368px] h-[314px] p-4 rounded-lg  mt-5 hover:border-violet-500 hover:border-[0.125rem] hover:shadow-md hover:shadow-black/10">
+        <div className="flex gap-4 my-4 py-5">
           <div className="">
             <Avatar>
                <Image src="/clien1.svg" alt="code" width={48} height={48} />
