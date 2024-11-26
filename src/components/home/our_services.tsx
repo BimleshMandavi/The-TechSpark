@@ -2,7 +2,7 @@ import React from 'react'
 
 const Our_services = () => {
   return (
-    <div className='w-full'>
+    <div className='w-screen'>
       <div className=" py-8  px-14 full">
       <h1 className="text-black font-bold text-[25px]">Our Services</h1>
       <div className="sm:flex sm:justify-around">

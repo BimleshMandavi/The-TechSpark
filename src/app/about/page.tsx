@@ -5,10 +5,11 @@ import Template from '../Template'
 import {motion} from 'framer-motion'
 const AboutPage = () => {
   return (
+    <Template>
     <div className=' sm:h-full sm:w-full'>
       <div className="relative h-[640px] w-full bg-custom-bg bg-cover bg-center text-white">
       <div className="absolute w-full inset-0 bg-black bg-opacity-85 sm:bg-opacity-70" />
-      <div className="relative flex items-center  h-full  ml-4 text-start sm:px-8">
+      <div className="relative flex items-center  h-full  ml-4 text-start sm:px-8 mt-20">
         <div className="flex justify-between flex-col gap-1 mx-6">
         <h4 className="text-[14px] text-[#FF7F0E]">Tech Spark</h4>
         <h2 className="text-4xl font-bold">About Us</h2>

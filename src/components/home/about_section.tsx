@@ -29,9 +29,9 @@ const About_section = () => {
 
   return (
     <div className='overflow-x-hidden '>
-       <div className="relative h-screen w-full bg-custom-bg bg-cover bg-center text-white">
-      <div className="absolute inset-0 bg-black bg-opacity-70" />
-      <div className="relative flex items-center   h-full  space-y-4 ml-6 md:ml-8 text-start ">
+       <div className="relative h-screen bg-custom-bg bg-cover bg-center text-white">
+      <div className="absolute inset-0 bg-black bg-opacity-70 w-screen " />
+      <div className="relative flex items-center   h-full   space-y-4 mx-6 md:ml-8 text-start ">
         <Image className='h-screen' src="/rectangle-1.svg" alt="Example" width={4} height={222} />
         <div className="flex justify-between flex-col gap-1 mx-6">
         <h1 className="text-4xl font-bold ">Top Web and Mobile App </h1>

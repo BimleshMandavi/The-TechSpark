@@ -90,7 +90,7 @@ const FooterPage = () => {
       </div>
     
 
-<div className='hidden md:flex flex-col gap-[40px] flex-wrap w-full'>
+<div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen'>
 
       <div className='md:flex  h-[276px] md:justify-between items-center px-10 pt-1 flex-wrap'>
          <div className='flex flex-col gap-4 flex-wrap'>

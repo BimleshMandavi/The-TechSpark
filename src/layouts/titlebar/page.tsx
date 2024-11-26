@@ -3,7 +3,7 @@ import React from 'react';
 
 const Nav2 = () => {
   return (
-    <div className='bg-[#ef6344d6] flex items-center justify-center bg-opacity-[80%] w-[100vw] overflow-hidden'>
+    <div className='bg-[#ef6344d6] flex items-center justify-center bg-opacity-[80%] w-screen overflow-hidden'>
       <div className='h-12 flex items-center whitespace-nowrap'>
         <div
           className='animate-scroll flex gap-36'

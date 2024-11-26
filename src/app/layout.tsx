@@ -23,13 +23,13 @@ export default function RootLayout({
      <html lang="en">
       <body className={inter.className}>
   
-        <div className="flex "> 
+        <div className="flex w-screen"> 
           <div className="flex-grow reletive">
             {children}
             <Analytics />
             <SpeedInsights />
           </div>
-              <div className="absolute top-0">
+              <div className="absolute top-0 w-screen">
         <Navbar />
          <Titlebar/>
         </div>

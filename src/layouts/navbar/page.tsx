@@ -10,7 +10,7 @@ const Navbar = () => {
 const pathname = usePathname()
 
   return (
-    <div className=' text-white flex justify-between items-center bg-[#000]   w-screen'>
+    <div className=' text-white flex justify-between items-center bg-[#000] w-screen'>
       <Link className='flex justify-between px-4 py-4 ' href="/">
         <Image src="/Tech.png" 
         alt='Tech Spark Logo'
@@ -30,7 +30,7 @@ const pathname = usePathname()
        <div className='my-5 mx-5'>
         <Link className={pathname === "/contact"? 'text-[#ef6344d6]':"text-white"}  href="contact">
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
-      <Fab className='hover:border-red-500 bg-white hover:text-black text-black' variant="extended" size="medium" color="primary">
+      <Fab variant="extended" size="medium" color="primary">
   Get Started
 </Fab>
     </Box>

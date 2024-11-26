@@ -11,7 +11,7 @@ export default function Home() {
 <link rel="icon" type="image/png" href="/Tech.png" />
   
     </header>
-    <div className="pb-7 w-full h-full  ">
+    <div className="pb-7 w-screen h-full  ">
    <About_section />
    <Our_services />
     <Case_study />
