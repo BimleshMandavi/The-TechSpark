@@ -10,7 +10,7 @@ const Navbar = () => {
 const pathname = usePathname()
 
   return (
-    <div className=' text-white flex justify-between items-center bg-[#000]   w-[100vw]'>
+    <div className=' text-white flex justify-between items-center bg-[#000]   w-screen'>
       <Link className='flex justify-between px-4 py-4 ' href="/">
         <Image src="/Tech.png" 
         alt='Tech Spark Logo'

@@ -65,16 +65,16 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className='min-h-[100vh] w-full'>
+    <div className='min-h-[100vh] w-screen'>
       <div className="relative min-h-[100vh] w-full bg-custom-bg bg-cover bg-center text-white">
         <div className="absolute inset-0 bg-black bg-opacity-80" />
         <div className='relative flex flex-col items-center sm:flex-row sm:justify-center'>
-          <div className='bg-black w-[358px] h-full m-14 text-white rounded sm:w-[50%] mt-[120px]'>
+          <div className='bg-black w-[358px] h-full m-14 text-white rounded sm:w-[50%] mt-[200px]'>
             <div className='text-center pt-5 sm:flex sm:flex-col sm:justify-center items-center mt-16'>
               <h1 className='text-[24px] font-black'>Get In Touch</h1>
               <Image className='pt-3 text-center' src="rtc1.svg" width={383} height={1} alt='map' />
             </div>
-            <div className='text-center mt-2 text-4xl'>
+            <div className='text-center mt-4 text-4xl'>
               <h1>Let’s discuss your project</h1>
             </div>
 

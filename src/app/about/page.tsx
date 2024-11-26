@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div className=' sm:h-full sm:w-full'>
+    <div className=' sm:h-full sm:w-full mt-20'>
       <div className="relative h-[640px] w-full bg-custom-bg bg-cover bg-center text-white">
       <div className="absolute w-full inset-0 bg-black bg-opacity-85 sm:bg-opacity-70" />
       <div className="relative flex items-center  h-full  ml-4 text-start sm:px-8">
@@ -34,7 +34,7 @@ const AboutPage = () => {
         <Image className='sm:w-[1614px] sm:h-[538px] p-8' src='/leaders.svg' alt='lead' height={132} width={496} />
       </div>
       </div>
-      <div className=' bg-[#000000] text-white sm:pt-[273px] sm:px-7 sm:flex py-8'>
+      <div className=' bg-[#000000] text-white sm:pt-[273px] sm:px-7 sm:flex py-8 mt-48'>
         <div className='pt-[210px] flex flex-col gap-3 px-5'>
           <h4 className='text-[11px] text-[#FF7F0E]'>BACKGROUND</h4>
          <div className='text-[28px]'> <h1 className='font-bold '>The purpose</h1>
