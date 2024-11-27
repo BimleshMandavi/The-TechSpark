@@ -136,7 +136,7 @@ const FooterPage = () => {
           <Link href="/blog">Blog</Link>
          </div>
          <div className='flex flex-col gap-3'>
-          <h1 className='text-[#FF7F0E] text-xl'>Service</h1>
+          <h1 className='text-[#FF7F0E] text-xl'>Our Services</h1>
           <Link href="/about">Web Design & Development</Link>
           <Link href="/carrier">Dashboard OR CRM</Link>
           <Link href="/services">Logo designing</Link>
