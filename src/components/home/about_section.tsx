@@ -39,7 +39,7 @@ const About_section = () => {
         <div className="flex justify-between flex-col gap-1 mx-6">
         <h1 className=" sm:text-3xl md:text-4xl  lg:text-4xl  font-bold ">Top Web and Mobile App </h1>
         {/* <h1 className="text-4xl font-bold">Software Development Company</h1> */}
-        <div className='sm:text-3xl md:text-4xl lg:text-4xl  font-bold'>
+        <div className='sm:text-4xl md:text-4xl lg:text-4xl  font-bold'>
         <span id="typed-element"></span>
         </div>
         <p className="max-w-2xl pt-5">
