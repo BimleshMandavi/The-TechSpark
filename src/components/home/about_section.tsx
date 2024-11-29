@@ -4,6 +4,7 @@ import React,{useEffect} from 'react'
 import { FaPlayCircle } from 'react-icons/fa'
 import Typed from 'typed.js';
 import {motion} from 'framer-motion'
+import Template from '@/app/Template';
 
 const About_section = () => {
 
@@ -28,15 +29,17 @@ const About_section = () => {
 
 
   return (
-    <div className='overflow-x-hidden '>
+    // <div className='overflow-x-scroll'>
+    <Template>
+     <div className='overflow-x-hidden mt-28'>
        <div className="relative h-screen bg-custom-bg bg-cover bg-center text-white">
       <div className="absolute inset-0 bg-black bg-opacity-70 w-screen " />
       <div className="relative flex items-center   h-full   space-y-4 mx-6 md:ml-8 text-start ">
         <Image className='h-screen' src="/rectangle-1.svg" alt="Example" width={4} height={222} />
         <div className="flex justify-between flex-col gap-1 mx-6">
-        <h1 className="text-4xl font-bold ">Top Web and Mobile App </h1>
+        <h1 className=" sm:text-3xl md:text-4xl  lg:text-4xl  font-bold ">Top Web and Mobile App </h1>
         {/* <h1 className="text-4xl font-bold">Software Development Company</h1> */}
-        <div className='text-4xl font-bold'>
+        <div className='sm:text-3xl md:text-4xl lg:text-4xl  font-bold'>
         <span id="typed-element"></span>
         </div>
         <p className="max-w-2xl pt-5">
@@ -45,14 +48,14 @@ const About_section = () => {
 Contact Us
 
         </p>
-        <div className="mt-10 flex justify-between w-full ">
+        <div className="mt-10  flex justify-between w-full ">
          <div>
           {/* <FaPlayCircle className="" /> */}
            {/* <button className="text-[12px]">SWIPE TO THIS VIDEO</button> */}
            <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
-           className=" h-[44px] bg-[#0C487B] flex justify-evenly p-2 items-center rounded cursor-pointer gap-2"
+           className="text-[12px] h-[44px] bg-[#0C487B] flex justify-evenly p-2 items-center rounded cursor-pointer gap-2"
            >
               <FaPlayCircle />
           SWIPE TO THIS VIDEO
@@ -63,7 +66,7 @@ Contact Us
            <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
-          className="text-[12px] h-[44px]  bg-[#000000] flex justify-center items-center rounded text-center sm:px-3 hover:bg-white hover:text-black"
+          className="text-[12px] h-[44px]  bg-[#000000] flex justify-center items-center rounded text-center sm:px-3 hover:bg-white hover:text-black mx-4"
            >
               WE ARE HIRING
            </motion.button>
@@ -72,6 +75,7 @@ Contact Us
       </div>
     </div>
     </div>
+    </Template>
   )
 }
 

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Box, Button, TextField } from '@mui/material';
 import emailjs from 'emailjs-com';
 import MyComponent from '@/components/googleMap/page';
+import Template from '../Template';
 
 const ContactPage: React.FC = () => {
   const [formValues, setFormValues] = useState({
@@ -65,21 +66,22 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className='min-h-[100vh] w-screen'>
+    <Template>
+    <div className='min-h-[100vh]  w-screen'>
       <div className="relative min-h-[100vh] w-full bg-custom-bg bg-cover bg-center text-white">
         <div className="absolute inset-0 bg-black bg-opacity-80" />
         <div className='relative flex flex-col items-center sm:flex-row sm:justify-center'>
-          <div className='bg-black w-[358px] h-full m-14 text-white rounded sm:w-[50%] mt-[200px]'>
+          <div className='bg-black w-[320px] h-full m-14 text-white rounded sm:w-[50%] mt-[200px]'>
             <div className='text-center pt-5 sm:flex sm:flex-col sm:justify-center items-center mt-16'>
               <h1 className='text-[24px] font-black'>Get In Touch</h1>
               <Image className='pt-3 text-center' src="rtc1.svg" width={383} height={1} alt='map' />
             </div>
-            <div className='text-center mt-4 text-4xl'>
+            <div className='text-center mt-4 text-4xl justify-center'>
               <h1>Let’s discuss your project</h1>
             </div>
-
             <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row xl:flex-col justify-between gap-8 sm:pt-8'>
-              <div>
+              <div className=''>
+              {/* <div className='mx-5'> */}
                 <Box
                   component="form"
                   onSubmit={handleSubmit}
@@ -95,7 +97,8 @@ const ContactPage: React.FC = () => {
                     onChange={handleChange}
                     InputProps={{ style: { color: 'white' } }}
                     InputLabelProps={{ style: { color: 'white' } }}
-                    className="bg-[#202020]"
+                    // className="bg-[#202020] hover:box-border rounded-sm"
+                    className="bg-slate-900  hover:box-border rounded-sm"
                   />
                   <TextField
                     id="phone"
@@ -107,7 +110,7 @@ const ContactPage: React.FC = () => {
                     error={!!errors.phone}
                     InputProps={{ style: { color: 'white' } }}
                     InputLabelProps={{ style: { color: 'white' } }}
-                    className="bg-[#202020]"
+                    className="bg-slate-900 rounded-sm"
                   />
                   <TextField
                     id="email"
@@ -119,7 +122,7 @@ const ContactPage: React.FC = () => {
                     error={!!errors.email}
                     InputProps={{ style: { color: 'white' } }}
                     InputLabelProps={{ style: { color: 'white' } }}
-                    className="bg-[#202020]"
+                    className="bg-slate-900 rounded-sm"
                   />
                   <TextField
                     id="message"
@@ -131,14 +134,16 @@ const ContactPage: React.FC = () => {
                     onChange={handleChange}
                     InputProps={{ style: { color: 'white' } }}
                     InputLabelProps={{ style: { color: 'white' } }}
-                    className="bg-[#202020]"
+                    className="bg-slate-900 rounded-sm"
                   />
-                  <Button type="submit" variant="contained" color="primary">
+                  <div>
+                  <Button type="submit" variant="contained" color="primary" className='mx-24 md:mx-24 lg:mx-22 2xl:mx-52 w-32 mt-5'>
                     Submit
                   </Button>
+                  </div>
                 </Box>
-
-                <div className='bg-[#0A0A0A] w-[358px] h-[165px] flex flex-wrap items-center gap-6 p-4'>
+                {/* <div className='bg-[#0A0A0A] w-[320px] h-[165px] flex flex-wrap items-center gap-6 p-4 mt-10'> */}
+                <div className='bg-slate-900 w-[320px] lg:max-w-full h-[165px] flex flex-wrap items-center justify-center gap-6 p-4 mt-10'>
                   <div className='flex gap-3'>
                     <div>
                       <Image src="phone02.svg" width={28} height={28} alt='phone' />
@@ -168,7 +173,7 @@ const ContactPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className='w-[168px] sm:w-[50%]'>
+              <div className='rounded-sm'>
                 <MyComponent />
               </div>
             </div>
@@ -176,6 +181,7 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
     </div>
+    </Template>
   );
 };
 

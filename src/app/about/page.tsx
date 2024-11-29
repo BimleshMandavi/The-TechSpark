@@ -3,10 +3,30 @@ import Image from 'next/image'
 import React from 'react'
 import Template from '../Template'
 import {motion} from 'framer-motion'
+
+import {Variants } from "framer-motion";
+
+const fadeInUpAnimation: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.3,
+      duration: 1.5,
+    },
+  },
+};
+
+
+
 const AboutPage = () => {
   return (
     <Template>
-    <div className=' sm:h-full sm:w-full'>
+    <div className='w-screen h-full mt-28'>
       <div className="relative h-[640px] w-full bg-custom-bg bg-cover bg-center text-white">
       <div className="absolute w-full inset-0 bg-black bg-opacity-85 sm:bg-opacity-70" />
       <div className="relative flex items-center  h-full  ml-4 text-start sm:px-8 mt-20">
@@ -17,9 +37,7 @@ const AboutPage = () => {
         Welcome to Tech Spark, your dedicated partner in software development and IT consulting. We specialize in empowering startups and scale-ups to achieve their business goals through innovative technology solutions. Our mission is to transform your vision into reality, ensuring seamless scalability, enhanced customer experiences, and the creation of cutting-edge products and processes.
         </p>
         <div className="mt-10 flex justify-between pr-3">
-         {/* <div className="w-[220px] h-[44px] bg-[#0C487B] flex justify-evenly items-center rounded cursor-pointer"> */}
          <div className="w-[220px] h-[44px] flex justify-evenly items-center rounded cursor-pointer">
-           {/* <div> <button>EXPLORE OPENINGS</button></div> */}
            <a href='https://github.com/BimleshMandavi/The-TechSpark'>
            <motion.button 
            whileHover={{scale:1.1}}
@@ -34,12 +52,12 @@ const AboutPage = () => {
       </div>
     </div>
     <div className=''>
-      <div className='h-[305px] bg-[#000000] text-white '>
+      <div className=' bg-[#000000] text-white '>
          <div className='flex flex-col gap-5 px-6 sm:px-8 ml-4 '>
           <h1 className='font-bold text-[28px]'>The Tech Spark Way</h1>
           <div className='sm:flex'>
           <p className='sm:w-[735px] sm:p-5'>At Tech Spark, we believe that the heart of exceptional tech teams lies in the people who compose them. Our mission is to create an inclusive environment where everyone, from introverts to extroverts, early risers to night owls, and analytical thinkers to creative minds, can thrive.</p>
-          <p className='sm:w-[674px] sm:p-5'>Tech Spark Way transcends the traditional tech hiring platform. We offer an all-encompassing solution that empowers recruiters and engineering managers to seamlessly attract, evaluate, and onboard the best developers. Our advanced suite of virtual recruiting tools simplifies every step of the hiring process, from initial talent identification to final engagement. By combining cutting-edge technology with a human-centric approach, we help you build strong, cohesive teams poised for success.</p>
+          <p className='sm:w-[735px] sm:p-5'>Tech Spark Way transcends the traditional tech hiring platform. We offer an all-encompassing solution that empowers recruiters and engineering managers to seamlessly attract, evaluate, and onboard the best developers. Our advanced suite of virtual recruiting tools simplifies every step of the hiring process, from initial talent identification to final engagement. By combining cutting-edge technology with a human-centric approach, we help you build strong, cohesive teams poised for success.</p>
           </div>
          </div>
       <div className='pt-8 pl-5 sm:w-full'>
@@ -289,3 +307,135 @@ damping: 10,
 }
 
 export default AboutPage
+
+
+
+
+
+// // this code have animation down to up
+// 'use client';
+
+// import { motion, Variants } from "framer-motion";
+
+// const fadeInUpAnimation: Variants = {
+//   hidden: {
+//     opacity: 0,
+//     y: 100,
+//   },
+//   show: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       staggerChildren: 0.3,
+//       duration: 1.5,
+//     },
+//   },
+// };
+
+// export default function AboutPage() {
+//   return (
+//     <div className="grid place-content-center h-screen">
+//       <motion.div
+//         initial="hidden"
+//         animate="show"
+//         variants={fadeInUpAnimation}
+//         className="flex justify-center text-center flex-col gap-4"
+//       >
+//         <br />
+//         <br />
+//         <motion.p variants={fadeInUpAnimation}>
+//           MONITOR. ALERT. AI DIAGNOSTICS REPORT.
+//         </motion.p>
+
+//         <motion.h1
+//           variants={fadeInUpAnimation}
+//           className="linear_text_gradient text-4xl font-extrabold leading-10 tracking-tight sm:text-6xl sm:leading-none md:text-8xl"
+//         >
+//           Get downtime <br />
+//           AI Diagnostics to help you <br />
+//           build better apps
+//         </motion.h1>
+
+//         <motion.p
+//           variants={fadeInUpAnimation}
+//           className="text-base text-gray-500 md:text-lg"
+//         >
+//           Join the mailing list for early access to the alpha release
+//         </motion.p>
+//       </motion.div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+// // // this code have each line animation 
+// // 'use client';
+
+// // import { motion, Variants } from "framer-motion";
+
+// // const fadeInUpAnimation: Variants = {
+// //   hidden: {
+// //     opacity: 0,
+// //     y: 100,
+// //   },
+// //   show: {
+// //     opacity: 1,
+// //     y: 0,
+// //     transition: {
+// //       staggerChildren: 0.3,
+// //       duration: 1.5,
+// //     },
+// //   },
+// // };
+
+// // export default function AboutPage() {
+// //   return (
+// //     <div className="grid place-content-center h-screen">
+// //       <motion.div
+// //         initial="hidden"
+// //         animate="show"
+// //         variants={fadeInUpAnimation}
+// //         className="flex justify-center text-center flex-col gap-4"
+// //       >
+// //         <motion.p
+// //           variants={fadeInUpAnimation}
+// //           whileHover={{
+// //             scale: 1.1, // Slight zoom effect
+// //             color: "#007bff", // Change color on hover
+// //           }}
+// //           className="cursor-pointer"
+// //         >
+// //           MONITOR. ALERT. AI DIAGNOSTICS REPORT.
+// //         </motion.p>
+
+// //         <motion.h1
+// //           variants={fadeInUpAnimation}
+// //           whileHover={{
+// //             scale: 1.05, // Slight zoom effect
+// //             color: "linear-gradient(to right, #ff7e5f, #feb47b)", // Gradient hover effect
+// //           backgroundColor:"red",
+// //           }}
+// //           className="linear_text_gradient text-4xl font-extrabold leading-10 tracking-tight sm:text-6xl sm:leading-none md:text-8xl cursor-pointer"
+// //         >
+// //           Get downtime <br />
+// //           AI Diagnostics to help you <br />
+// //           build better apps
+// //         </motion.h1>
+
+// //         <motion.p
+// //           variants={fadeInUpAnimation}
+// //           whileHover={{
+// //             scale: 1.05, // Slight zoom effect
+// //             color: "#ff4500", // Orange hover color
+// //           }}
+// //           className="text-base text-gray-500 md:text-lg cursor-pointer"
+// //         >
+// //           Join the mailing list for early access to the alpha release
+// //         </motion.p>
+// //       </motion.div>
+// //     </div>
+// //   );
+// // }

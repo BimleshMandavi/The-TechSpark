@@ -43,7 +43,7 @@ font-bold tracking-widest">FAQ</h4>
           <Image className="sm:w-full sm:h-full" src="/faq.svg" alt="FAQ" width={471.73} height={219.1} />
         </div>
         <div className="flex sm:flex-col">
-        <div className="py-4">
+        <div className="">
            <div className="flex flex-col gap-2 py-2">
          <Accordion>
         <AccordionSummary
@@ -75,6 +75,52 @@ font-bold tracking-widest">FAQ</h4>
           </Typography>
         </AccordionDetails>
       </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<IoIosArrowDropdownCircle />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          <Typography>Software Engineer - Android</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+        <Accordion>
+        <AccordionSummary
+          expandIcon={<IoIosArrowDropdownCircle />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          <Typography>Software Engineer - Android</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+        <Accordion>
+        <AccordionSummary
+          expandIcon={<IoIosArrowDropdownCircle />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          <Typography>Software Engineer - Android</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
         </div>
         <div>
@@ -90,51 +136,7 @@ font-bold tracking-widest">FAQ</h4>
       </Accordion>
         </div>
         <div className="flex flex-col gap-2 py-2">
-            <Accordion>
-        <AccordionSummary
-          expandIcon={<IoIosArrowDropdownCircle />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          <Typography>Software Engineer - Android</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-        <Accordion>
-        <AccordionSummary
-          expandIcon={<IoIosArrowDropdownCircle />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          <Typography>Software Engineer - Android</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-        <Accordion>
-        <AccordionSummary
-          expandIcon={<IoIosArrowDropdownCircle />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          <Typography>Software Engineer - Android</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+          
         </div>
         </div>
         </div>
@@ -146,11 +148,11 @@ font-bold tracking-widest">FAQ</h4>
          <div className="bg-[#0C487B] sm:w-[50%]  text-white h-[200px] sm:h-[402px] flex flex-col justify-center items-center text-center">
           <h1 className="font-bold text-[28px]">Energy of a start-up combined with 30 years of experience.</h1>
           <div>
-            {/* <button>See Job Vacancies</button> */}
+            <button>See Job Vacancies</button>
             <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
-           className="hidden sm:flex sm:justify-center bg-white text-[#FF7F0E] rounded-3xl sm:w-[216px] sm:h-[54px] sm:mt-4"
+           className="hidden sm:flex sm:justify-center bg-white text-[#FF7F0E] rounded-3xl sm:w-[200px] text-center sm:h-[50px] sm:mt-4"
            >
              See Job Vacancies
            </motion.button>
@@ -187,7 +189,9 @@ font-bold tracking-widest">FAQ</h4>
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
         </div>
-        <div className="border-2 hidden md:flex md:flex-col border-[#717171] w-[368px] h-[314px] p-4 rounded-lg  mt-5 ">
+
+        <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] sm:w-[368px] h-[314px] p-4 rounded-lg  mt-5 hover:border-violet-500 hover:border-[0.125rem] hover:shadow-md hover:shadow-black/10">
+        {/* <div className="border-2 hidden md:flex md:flex-col border-[#717171] w-[368px] h-[314px] p-4 rounded-lg  mt-5 "> */}
         <div className=" flex gap-4 py-5">
           <div className="">
             <Avatar>
@@ -204,7 +208,9 @@ font-bold tracking-widest">FAQ</h4>
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
         </div>
-        <div className="border-2  hidden md:flex md:flex-col border-[#717171] w-[368px] h-[314px] p-4 rounded-lg  mt-5 ">
+
+        <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] sm:w-[368px] h-[314px] p-4 rounded-lg  mt-5 hover:border-violet-500 hover:border-[0.125rem] hover:shadow-md hover:shadow-black/10">
+        {/* <div className="border-2  hidden md:flex md:flex-col border-[#717171] w-[368px] h-[314px] p-4 rounded-lg  mt-5 "> */}
         <div className=" flex gap-4 py-5">
           <div className="">
             <Avatar>
@@ -221,7 +227,9 @@ font-bold tracking-widest">FAQ</h4>
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
         </div>
-        <div className="border-2  hidden md:flex md:flex-col border-[#717171] w-[368px] h-[314px] p-4 rounded-lg  mt-5 ">
+
+        <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] sm:w-[368px] h-[314px] p-4 rounded-lg  mt-5 hover:border-violet-500 hover:border-[0.125rem] hover:shadow-md hover:shadow-black/10">
+        {/* <div className="border-2  hidden md:flex md:flex-col border-[#717171] w-[368px] h-[314px] p-4 rounded-lg  mt-5 "> */}
         <div className=" flex gap-4 py-5">
           <div className="">
             <Avatar>
@@ -238,35 +246,41 @@ font-bold tracking-widest">FAQ</h4>
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
         </div>
+
+      
         </div>
       </div>
-      <div>
-        <h1 className="font-bold text-[25px] text-center">Innovative Partnerships, Infinite Possibilities</h1>
-        <div className="h-[133.19px] flex justify-evenly flex-wrap mt-6">
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn1.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn2.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn3.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn4.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn5.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn6.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn7.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
-          <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
-            <Image  src="/prtn8.svg" alt="FAQ" width={106.73} height={52.1} />
-          </div>
+      <div className="mb-28">
+      <h1 className="font-bold text-[25px] text-center">
+        Innovative Partnerships, Infinite Possibilities
+      </h1>
+      <div className="h-[133.19px] flex justify-evenly flex-wrap mt-6 animate-horizontalMove">
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn1.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn2.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn3.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn4.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn5.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn6.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn7.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+          <Image src="/prtn8.svg" alt="FAQ" width={106.73} height={52.1} />
+        </div>
+      
+    
         </div>
       </div>
     </div>

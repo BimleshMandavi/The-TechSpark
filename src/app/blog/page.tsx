@@ -2,9 +2,27 @@
 import Image from 'next/image'
 import React from 'react'
 import {motion} from "framer-motion";
+
+import {Variants } from "framer-motion";
+
+const fadeInUpAnimation: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.3,
+      duration: 1.5,
+    },
+  },
+};
+
 const BlogPage = () => {
   return (
-    <div className='h-full w-full'>
+    <div className='w-full place-content-center h-screen'>
       <div className="relative h-full w-full bg-custom1-bg bg-cover bg-center text-white">
       <div className="absolute inset-0 bg-black bg-opacity-80 sm:bg-opacity-60" />
      <div className='relative '>

@@ -81,8 +81,18 @@ const config = {
         'custom-bg': "url('/image.png')",
         'custom1-bg': "url('/blog-bg.svg')"
       },
+      // keyframes: {
+      //   horizontalMove: {
+      //     '0%': { transform: 'translateX(0)' },
+      //     '100%': { transform: 'translateX(100%)' }, // Adjust this distance as needed
+      //   },
+      // },
+      // animation: {
+      //   horizontalMove: 'horizontalMove 6s linear infinite', // Duration: 1s, linear easing, infinite loop
+      // },
     },
   },
+  
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
