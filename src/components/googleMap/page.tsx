@@ -5,7 +5,7 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 // Define types for styles and center coordinates
 const containerStyle: React.CSSProperties = {
-  width: '348px',
+  width: '320px',
   height: '280px',
   marginTop:"20px"
 };

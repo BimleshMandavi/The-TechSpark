@@ -101,54 +101,67 @@ const FooterPage = () => {
         priority />
         <p className='w-[419px] text-[18px] text-start'>Make Your Business Online</p>
        <div className='flex  gap-2 ' >
-        <Link href="/"><Image src="/facebook.svg" 
+        <Link href="/">
+        <div className="hover:scale-110 hover:bg-blue-500 p-2 rounded-full transition-all duration-300 ease-in-out">
+        <Image src="/facebook.svg" 
         alt='Facebook Logo'
         height={40}
         width={40}
-        priority /></Link>
-       <Link href="/"> <Image src="/linkedin.svg" 
+        priority />
+        </div>
+        </Link>
+       <Link href="/"> 
+       <div className="hover:scale-110 hover:bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out">
+       <Image src="/linkedin.svg" 
         alt='Linkedin Logo'
         height={40}
         width={40}
-        priority /></Link>
+        priority />
+        </div>
+        </Link>
         <Link href="/">
+       <div className="hover:scale-110 hover:bg-pink-500 p-2 rounded-full transition-all duration-300 ease-in-out">
         <Image src="/insta.svg" 
         alt='Insta Logo'
         height={40}
         width={40}
-        priority /></Link>
+        priority />
+        </div>
+        </Link>
         
          <Link href="/">
+       <div className="hover:scale-110 hover:bg-sky-400 p-2 rounded-full transition-all duration-300 ease-in-out">
          <Image src="/twitter.svg" 
         alt='Twitter Logo'
         height={40}
         width={40}
         priority />
+        </div>
          </Link>
         </div>
          </div>
          <div className='flex flex-col gap-3 flex-wrap'>
           <h1 className='text-[#FF7F0E] text-xl'>Company</h1>
-          <Link href="/about">About Us</Link>
-          <Link href="/carrier">Careers</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/contact">Contact Us</Link>
-          <Link href="/blog">Blog</Link>
+          <Link href="/about" className='hover:text-purple-600'>About Us</Link>
+          <Link href="/carrier" className='hover:text-blue-500'>Careers</Link>
+          <Link href="/services" className='hover:text-sky-400'>Services</Link>
+          <Link href="/contact" className='hover:text-blue-500'>Contact Us</Link>
+          <Link href="/blog" className='hover:text-sky-400'>Blog</Link>
          </div>
          <div className='flex flex-col gap-3'>
           <h1 className='text-[#FF7F0E] text-xl'>Our Services</h1>
-          <Link href="/about">Web Design & Development</Link>
-          <Link href="/carrier">Dashboard OR CRM</Link>
-          <Link href="/services">Logo designing</Link>
-          <Link href="/contact">Graphics designing</Link>
-          <Link href="/blog">Server Management</Link>
+          <Link href="/about" className='hover:text-sky-400'>Web Design & Development</Link>
+          <Link href="/carrier" className='hover:text-sky-400'>Dashboard OR CRM</Link>
+          <Link href="/services" className='hover:text-sky-400'>Logo designing</Link>
+          <Link href="/contact" className='hover:text-sky-400'>Graphics designing</Link>
+          <Link href="/blog" className='hover:text-sky-400'>Server Management</Link>
          </div>
          <div className='flex flex-col justify-between items-start gap-5 flex-wrap'>
           <h1 className='text-[18px] Poppins'>Join Newsletter</h1>
           <div className='flex flex-col items-start'>
-          <input className='w-[342px] sm:w-full h-[54px] p-4 text-black' type="email" placeholder='Type email hare...' />
+          <input className='w-[342px] sm:w-full h-[54px] hover:border-orange-400 p-4 text-black cursor-pointer rounded-sm' type="email" placeholder='Type email hare...' />
           </div>
-            <button className='text-[18px] font-semibold Inter  bg-[#0C487B] w-[138px] sm:w-full h-[54px] text-center rounded cursor-pointer'>Subscribe</button>
+            <button className='text-[18px] font-semibold Inter  bg-[#0C487B] hover:text-red-500 w-[138px] sm:w-full h-[54px] text-center rounded cursor-pointer'>Subscribe</button>
          </div>
       </div>
       <hr/>
