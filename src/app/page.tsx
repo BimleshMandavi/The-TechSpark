@@ -11,23 +11,23 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/Tech.png" />
 
         {/* Meta Tags */}
-        <title>Tech Spark - Web & Mobile App Development</title>
+        <title> The TechSpark IT Solutions - Web & Mobile App Development</title>
         <meta
           name="description"
-          content="Tech Spark is a top web and mobile app software development company offering services like web and app development, logo design, UI/UX design, dashboard design, and server management."
+          content="The TechSpark IT Solutions is a top web and mobile app software development company offering services like web and app development, logo design, UI/UX design, dashboard design, and server management."
         />
         <meta
           name="keywords"
-          content="web development, mobile app development, logo design, UI/UX design, dashboard design, server management, TechSpark, Tech Spark"
+          content="web development, mobile app development, logo design, UI/UX design, dashboard design, server management, TechSpark, Tech Spark, The TechSpark IT Solutions"
         />
-        <meta name="author" content="Tech Spark" />
+        <meta name="author" content="The TechSpark IT Solutions" />
         <meta
           property="og:title"
-          content="Tech Spark - Leading Web & App Development Company"
+          content="The TechSpark IT Solutions - Leading Web & App Development Company"
         />
         <meta
           property="og:description"
-          content="Tech Spark provides top-notch web and mobile app development services, ensuring high-quality solutions at affordable prices."
+          content="The TechSpark IT Solutions provides top-notch web and mobile app development services, ensuring high-quality solutions at affordable prices."
         />
         <meta
           property="og:image"
@@ -42,7 +42,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "http://schema.org",
               "@type": "Organization",
-              "name": "Tech Spark",
+              "name": "The TechSpark IT Solutions",
               "url": "https://www.gotechspark.com",
               "logo": "https://www.gotechspark.com/Tech.png",
               "contactPoint": {
@@ -58,7 +58,7 @@ export default function Home() {
                 "https://www.linkedin.com/company/TechSpark",
               ],
               "description":
-                "Tech Spark is a top web and mobile app software development company offering services like web and app development, logo design, UI/UX design, dashboard design, and server management.",
+                "The TechSpark IT Solutions is a top web and mobile app software development company offering services like web and app development, logo design, UI/UX design, dashboard design, and server management.",
             }),
           }}
         />
