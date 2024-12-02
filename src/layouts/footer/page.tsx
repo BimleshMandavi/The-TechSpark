@@ -62,7 +62,7 @@ const FooterPage = () => {
               height={21.61}
               priority
             />
-        <div>Carrier</div>
+        <div>Services</div>
       </Link>
       </div>
       <div className={`${pathname === "/contact" ? "border-t-2 border-red-500"  : ""}` +   'flex flex-col justify-center items-center gap-4 text-center pb-2'}>

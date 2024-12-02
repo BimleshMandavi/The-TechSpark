@@ -36,7 +36,7 @@ const BlogPage = () => {
             animate={{opacity:1, y:10}}
             transition={{duration:0.5}}
             >
-          <span className='w-[80px] font-bold'>TECH PYRO</span> is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.
+          <span className='w-[80px] font-bold text-[#FF7F0E] mx-2'>TechSpark IT Solutions</span>   is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.
           </motion.div>
           </div> 
           </div>    

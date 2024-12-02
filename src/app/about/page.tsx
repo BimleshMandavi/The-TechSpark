@@ -34,7 +34,7 @@ const AboutPage = () => {
         <h4 className="text-[14px] text-[#FF7F0E]">Tech Spark</h4>
         <h2 className="text-4xl font-bold">About Us</h2>
         <p className="max-w-2xl pt-5">
-        Welcome to Tech Spark, your dedicated partner in software development and IT consulting. We specialize in empowering startups and scale-ups to achieve their business goals through innovative technology solutions. Our mission is to transform your vision into reality, ensuring seamless scalability, enhanced customer experiences, and the creation of cutting-edge products and processes.
+        Welcome to TechSpark IT Solutions, your dedicated partner in software development and IT consulting. We specialize in empowering startups and scale-ups to achieve their business goals through innovative technology solutions. Our mission is to transform your vision into reality, ensuring seamless scalability, enhanced customer experiences, and the creation of cutting-edge products and processes.
         </p>
         <div className="mt-10 flex justify-between pr-3">
          <div className="w-[220px] h-[44px] flex justify-evenly items-center rounded cursor-pointer">
@@ -56,7 +56,7 @@ const AboutPage = () => {
          <div className='flex flex-col gap-5 px-6 sm:px-8 ml-4 '>
           <h1 className='font-bold text-[28px]'>The Tech Spark Way</h1>
           <div className='sm:flex'>
-          <p className='sm:w-[735px] sm:p-5'>At Tech Spark, we believe that the heart of exceptional tech teams lies in the people who compose them. Our mission is to create an inclusive environment where everyone, from introverts to extroverts, early risers to night owls, and analytical thinkers to creative minds, can thrive.</p>
+          <p className='sm:w-[735px] sm:p-5'>At TechSpark IT Solutions, we believe that the heart of exceptional tech teams lies in the people who compose them. Our mission is to create an inclusive environment where everyone, from introverts to extroverts, early risers to night owls, and analytical thinkers to creative minds, can thrive.</p>
           <p className='sm:w-[735px] sm:p-5'>Tech Spark Way transcends the traditional tech hiring platform. We offer an all-encompassing solution that empowers recruiters and engineering managers to seamlessly attract, evaluate, and onboard the best developers. Our advanced suite of virtual recruiting tools simplifies every step of the hiring process, from initial talent identification to final engagement. By combining cutting-edge technology with a human-centric approach, we help you build strong, cohesive teams poised for success.</p>
           </div>
          </div>
@@ -69,7 +69,7 @@ const AboutPage = () => {
           <h4 className='text-[11px] text-[#FF7F0E]'>BACKGROUND</h4>
          <div className='text-[28px]'> <h1 className='font-bold '>The purpose</h1>
           <h1>Of the program</h1></div>
-          <p>Tech Spark is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.</p>
+          <p>TechSpark IT Solutions is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.</p>
           <p>The current program will run through 2022, with participants divided into four cohorts.</p>
         </div>
         <div className='pt-12 px-5 flex flex-col gap-4 sm:pt-[273px]'>

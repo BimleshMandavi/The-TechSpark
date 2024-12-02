@@ -121,7 +121,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="bg-gray-100 py-10 mt-60">
+    <div className="bg-gray-100 py-10 mt-60 ">
       <motion.div
         className="container mx-auto px-4 text-center"
         initial="hidden"
