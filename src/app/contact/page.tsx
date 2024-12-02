@@ -46,7 +46,6 @@ const ContactPage: React.FC = () => {
         'Y9QpykyPUz1628IX3' // Replace with your EmailJS user ID
       )
       .then((result) => {
-        console.log('Email successfully sent:', result.text);
         alert('Form submitted and email sent successfully!');
 
          setFormValues({
@@ -57,7 +56,6 @@ const ContactPage: React.FC = () => {
       });
       })
       .catch((error) => {
-        console.error('Error sending email:', error);
         alert('Failed to send email. Please try again.');
       });
     } else {
