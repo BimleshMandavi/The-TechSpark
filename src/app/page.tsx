@@ -11,10 +11,11 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/Tech.png" />
 
         {/* Meta Tags */}
-        <title> The TechSpark IT Solutions - Web & Mobile App Development</title>
+        <title> The TechSpark IT Solutions</title>
         <meta
           name="description"
-          content="The TechSpark IT Solutions is a top web and mobile app software development company offering services like web and app development, logo design, UI/UX design, dashboard design, and server management."
+  content="The TechSpark IT Solutions offers premium web and app development services, UI/UX design, and server management tailored to your needs."
+
         />
         <meta
           name="keywords"
@@ -40,26 +41,13 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "http://schema.org",
-              "@type": "Organization",
-              "name": "The TechSpark IT Solutions",
-              "url": "https://www.gotechspark.com",
-              "logo": "https://www.gotechspark.com/Tech.png",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "phone": "+91-6265761531",
-                "contactType": "Customer Service",
-                "areaServed": "Global",
-                "availableLanguage": ["Hindi,English"],
-              },
-              "sameAs": [
-                "https://www.facebook.com/TechSpark",
-                "https://twitter.com/TechSpark",
-                "https://www.linkedin.com/company/TechSpark",
-              ],
-              "description":
-                "The TechSpark IT Solutions is a top web and mobile app software development company offering services like web and app development, logo design, UI/UX design, dashboard design, and server management.",
-            }),
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "The TechSpark IT Solutions",
+  "url": "https://www.gotechspark.com",
+  "logo": "https://www.gotechspark.com/logo.png",
+  "description": "Leading IT solutions provider offering web and mobile development, UI/UX design, and server management services."
+}),
           }}
         />
       </Head>
