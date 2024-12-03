@@ -6,7 +6,7 @@ const Nav2 = () => {
     <div className='bg-[#ef6344d6] flex items-center justify-center bg-opacity-[80%] w-screen overflow-hidden'>
       <div className='h-12 flex items-center whitespace-nowrap'>
        <div
-  className="animate-scroll flex  "
+  className="animate-scroll "
   style={{ animation: "scroll 20s linear infinite" }}
 >
   <ul className="list-disc text-white  flex items-center justify-center gap-80">
