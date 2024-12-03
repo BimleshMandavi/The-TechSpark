@@ -150,11 +150,11 @@ const FooterPage = () => {
          </div>
          <div className='flex flex-col gap-3'>
           <h1 className='text-[#FF7F0E] text-xl'>Our Services</h1>
-          <Link href="/services" className='hover:text-sky-400'>Web Design & Development</Link>
-          <Link href="/services" className='hover:text-sky-400'>Dashboard OR CRM</Link>
-          <Link href="/services" className='hover:text-sky-400'>Logo designing</Link>
-          <Link href="/services" className='hover:text-sky-400'>Graphics designing</Link>
-          <Link href="/services" className='hover:text-sky-400'>Server Management</Link>
+          <Link href="/carrier" className='hover:text-sky-400'>Web Design & Development</Link>
+          <Link href="/carrier" className='hover:text-sky-400'>Dashboard OR CRM</Link>
+          <Link href="/carrier" className='hover:text-sky-400'>Logo designing</Link>
+          <Link href="/carrier" className='hover:text-sky-400'>Graphics designing</Link>
+          <Link href="/carrier" className='hover:text-sky-400'>Server Management</Link>
          </div>
          <div className='flex flex-col justify-between items-start gap-5 flex-wrap'>
           <h1 className='text-[18px] Poppins'>Join Newsletter</h1>
