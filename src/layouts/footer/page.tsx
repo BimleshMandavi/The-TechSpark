@@ -138,6 +138,17 @@ const FooterPage = () => {
         priority />
         </div>
          </Link>
+         <Link href="https://wa.me/916265761531">
+            <div className="hover:scale-110 hover:bg-[#34c358] p-2 rounded-full transition-all duration-300 ease-in-out">
+              <Image  className="rounded-full"
+                src="/whatsapp.gif"
+                alt="WhatsApp Logo"
+                height={40}
+                width={40}
+                priority
+              />
+            </div>
+          </Link>
         </div>
          </div>
          <div className='flex flex-col gap-3 flex-wrap'>
