@@ -101,7 +101,7 @@ const FooterPage = () => {
         priority />
         <p className='w-[419px] text-[18px] text-start'>Make Your Business Online</p>
        <div className='flex  gap-2 ' >
-        <Link href="/">
+        <Link href="https://www.facebook.com/profile.php?id=61570083880734">
         <div className="hover:scale-110 hover:bg-blue-500 p-2 rounded-full transition-all duration-300 ease-in-out">
         <Image src="/facebook.svg" 
         alt='Facebook Logo'

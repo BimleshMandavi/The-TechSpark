@@ -49,7 +49,7 @@ const Sidebar = () => {
     <div>
       <div className="hidden lg:flex w-[113px] h-[744px]">
         <div className="flex flex-col justify-center items-center w-full gap-3">
-          <Link href="/">
+          <Link href="https://www.facebook.com/profile.php?id=61570083880734">
             <div className="hover:scale-110 hover:bg-blue-500 p-2 rounded-full transition-all duration-300 ease-in-out">
               <Image
                 src="/facebook.svg"
