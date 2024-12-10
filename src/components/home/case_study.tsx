@@ -26,9 +26,12 @@ const Case_study = () => {
         <h1 className="text-black font-bold text-[25px] sm:text-[50px]">Driving Success: A Tech Spark Case Study</h1>
         <p className="sm:text-[18px] ">Welcome to a journey of innovation and success with Tech Spark. In our latest case study, we delve into the transformative partnership with [Client Company], showcasing a remarkable story of overcoming challenges and achieving unprecedented results. From the initial hurdles to the triumphant outcomes, this case study unveils the impact of [Your Product/Service] in [Client Industry]. Discover how our tailored solutions, strategic approach, and collaborative efforts propelled [Client Company] to new heights, setting a benchmark for excellence in their sector. Join us as we explore the intricate details of this success story, demonstrating the power of innovation and the tangible benefits experienced by our valued client. This is more than just a case study; it's a testament to the potential of partnership and the possibilities that unfold when visionary companies come together to create meaningful change.</p>
       </div>
-        <div className="w-[220px] h-[44px] bg-[#0C487B] mt-4 flex justify-evenly items-center rounded text-white">
-           <button className="text-white">LEARN MORE..</button>
-         </div>
+        <motion.div 
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+        className="w-[220px] h-[44px] bg-[#0C487B] border hover:border-blue-600 hover:bg-white mt-4 flex justify-evenly items-center rounded text-white">
+           <button className="text-white hover:text-black">LEARN MORE...</button>
+         </motion.div>
          </div>
       </div>
     
@@ -47,9 +50,9 @@ font-bold tracking-widest">FAQ</h4>
            <div className="flex flex-col gap-2 py-2">
          <Accordion>
         <AccordionSummary
-          expandIcon={<IoIosArrowDropdownCircle />}
-          aria-controls="panel2-content"
-          id="panel2-header"
+          // expandIcon={<IoIosArrowDropdownCircle />}
+          // aria-controls="panel2-content"
+          // id="panel2-header"
         >
           <Typography>Software Engineer - Android</Typography>
         </AccordionSummary>
@@ -145,16 +148,15 @@ font-bold tracking-widest">FAQ</h4>
          <div className="sm:w-[50%]">
          <Image className="sm:w-full sm:h-full" src="/energy-startup.svg" alt="startup" width={471.73} height={219.1} />
          </div>
-         <div className="bg-[#0C487B] sm:w-[50%]  text-white h-[200px] sm:h-[402px] flex flex-col justify-center items-center text-center">
+         <div className="bg-[#0C487B] sm:w-[50%]  text-white h-[200px] sm:h-[370px] flex flex-col justify-center items-center text-center">
           <h1 className="font-bold text-[28px]">Energy of a start-up combined with 30 years of experience.</h1>
           <div>
-            <button>See Job Vacancies</button>
             <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
-           className="hidden sm:flex sm:justify-center bg-white text-[#FF7F0E] rounded-3xl sm:w-[200px] text-center sm:h-[50px] sm:mt-4"
-           >
-             See Job Vacancies
+           className=" sm:flex sm:justify-center mb-6 bg-white  text-[#FF7F0E] rounded-3xl sm:w-[200px] text-center sm:h-[50px] sm:mt-4"
+           >  
+            <p className='mt-3 mb-4 md:text-lg sm:text-[10px] text-sm'>See Job Vacancies</p> 
            </motion.button>
           </div>
          </div>
@@ -173,7 +175,7 @@ font-bold tracking-widest">FAQ</h4>
         <div className="sm:flex sm:justify-evenly sm:gap-5 ">
         {/* <div className="w-full grid gap-4 p-2 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4"> */}
         <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] sm:w-[368px] h-[314px] p-4 rounded-lg  mt-5 hover:border-violet-500 hover:border-[0.125rem] hover:shadow-md hover:shadow-black/10">
-        <div className="flex gap-4 my-4 py-5">
+        <div className="flex gap-4 my-0 py-5">
           <div className="">
             <Avatar>
                <Image src="/clien1.svg" alt="code" width={48} height={48} />
@@ -182,9 +184,10 @@ font-bold tracking-widest">FAQ</h4>
           <div>
             <h4 className="text-[#061C3D]">Annette Black</h4>
             <p className="text-[#42526B] text-[14px]">Chief Chairman of <span className="text-[#7534FF]">Netflix</span></p>
+            
           </div>
         </div>
-        <p>
+        <p className='text-[10px]'>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla nostrum saepe soluta sed aspernatur esse blanditiis praesentium eveniet iste quam, impedit ut inventore eum a aperiam officiis dicta ipsum?
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
@@ -251,9 +254,13 @@ font-bold tracking-widest">FAQ</h4>
         </div>
       </div>
       <div className="mb-28">
-      <h1 className="font-bold text-[25px] text-center">
+      <h1 className="font-bold text-[25px] text-center mt-80">
         Innovative Partnerships, Infinite Possibilities
       </h1>
+      {/* <div
+  className="animate-scroll"
+  style={{ animation: "scroll 20s linear infinite" }}
+>  */}
       <div className="h-[133.19px] flex justify-evenly flex-wrap mt-6 animate-horizontalMove">
         <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn1.svg" alt="FAQ" width={106.73} height={52.1} />
@@ -279,6 +286,7 @@ font-bold tracking-widest">FAQ</h4>
         <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn8.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
+        {/* </div> */}
       
     
         </div>
