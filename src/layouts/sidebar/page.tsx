@@ -1,44 +1,3 @@
-// import Image from 'next/image'
-// import Link from 'next/link'
-// import React from 'react'
-
-// const Sidebar = () => {
-//   return (
-//     <div>
-//       <div className='hidden lg:flex w-[113px] h-[744px] '>
-//         <div className='flex flex-col  justify-center items-center w-full gap-3  ' >
-//         <Link href="/"><Image src="/facebook.svg" 
-//         alt='Facebook Logo'
-//         height={40}
-//         width={40}
-//         priority /></Link>
-//        <Link href="/"> <Image src="/linkedin.svg" 
-//         alt='Linkedin Logo'
-//         height={40}
-//         width={40}
-//         priority /></Link>
-//         <Link href="/">
-//         <Image src="/insta.svg" 
-//         alt='Insta Logo'
-//         height={40}
-//         width={40}
-//         priority /></Link>
-        
-//          <Link href="/">
-//          <Image src="/twitter.svg" 
-//         alt='Twitter Logo'
-//         height={40}
-//         width={40}
-//         priority />
-//          </Link>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Sidebar
-
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -49,7 +8,18 @@ const Sidebar = () => {
     <div>
       <div className="hidden lg:flex w-[113px] h-[744px]">
         <div className="flex flex-col justify-center items-center w-full gap-3">
-          <Link href="/">
+          <Link href="https://wa.me/916265761531">
+            <div className="hover:scale-110 hover:bg-[#34c358] p-2 rounded-full transition-all duration-300 ease-in-out">
+              <Image  className="rounded-full"
+                src="/whatsapp.gif"
+                alt="WhatsApp Logo"
+                height={40}
+                width={40}
+                priority
+              />
+            </div>
+          </Link>
+          <Link href="https://www.facebook.com/profile.php?id=61570083880734">
             <div className="hover:scale-110 hover:bg-blue-500 p-2 rounded-full transition-all duration-300 ease-in-out">
               <Image
                 src="/facebook.svg"

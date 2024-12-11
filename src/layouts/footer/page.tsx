@@ -90,7 +90,8 @@ const FooterPage = () => {
       </div>
     
 
-<div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen'>
+{/* <div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen'> */}
+<div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen mb-0'>
 
       <div className='md:flex  h-[276px] md:justify-between items-center px-10 pt-1 flex-wrap'>
          <div className='flex flex-col gap-4 flex-wrap'>
@@ -101,7 +102,7 @@ const FooterPage = () => {
         priority />
         <p className='w-[419px] text-[18px] text-start'>Make Your Business Online</p>
        <div className='flex  gap-2 ' >
-        <Link href="/">
+        <Link href="https://www.facebook.com/profile.php?id=61570083880734">
         <div className="hover:scale-110 hover:bg-blue-500 p-2 rounded-full transition-all duration-300 ease-in-out">
         <Image src="/facebook.svg" 
         alt='Facebook Logo'
@@ -138,6 +139,17 @@ const FooterPage = () => {
         priority />
         </div>
          </Link>
+         <Link href="https://wa.me/916265761531">
+            <div className="hover:scale-110 hover:bg-[#34c358] p-2 rounded-full transition-all duration-300 ease-in-out">
+              <Image  className="rounded-full"
+                src="/whatsapp.gif"
+                alt="WhatsApp Logo"
+                height={40}
+                width={40}
+                priority
+              />
+            </div>
+          </Link>
         </div>
          </div>
          <div className='flex flex-col gap-3 flex-wrap'>

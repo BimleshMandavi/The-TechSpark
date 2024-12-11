@@ -23,7 +23,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden mt-20">
+    <div className="overflow-x-hidden md:mt-10 sm:mt-20 mt-20">
       <div className="relative h-screen bg-custom-bg bg-cover bg-center text-white">
         <div className="absolute inset-0 bg-black bg-opacity-70 w-screen" />
         <div className="relative flex items-center h-full w-screen space-y-4 mx-6 md:ml-8 text-start">
@@ -65,6 +65,9 @@ const AboutSection = () => {
               </motion.button>
             </div>
           </div>
+          {/* <div className=' animate-pulse'>
+            <img src="earth.svg" alt="not loaded" />
+          </div> */}
         </div>
       </div>
     </div>

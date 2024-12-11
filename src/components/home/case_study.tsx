@@ -9,6 +9,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { Avatar } from "@mui/material";
 import Work_cards from '../cards/work_cards';
 import Services_card from '../cards/services_cards';
+// import carrier from 'src/app/carrier'
 import{motion} from 'framer-motion'
 
 const Case_study = () => {
@@ -16,6 +17,7 @@ const Case_study = () => {
     <div className='w-full'>
       <div className="px-5 py-5 flex flex-col  justify-center gap-8 ">
     <Services_card />
+    {/* <carrier/> */}
       <div className="sm:flex sm:gap-5 w-full">
       <div className="sm:w-[50%]">
          <Image className="sm:w-full sm:h-full" src="/meetup.svg" alt="code" width={500} height={100} />
@@ -50,9 +52,9 @@ font-bold tracking-widest">FAQ</h4>
            <div className="flex flex-col gap-2 py-2">
          <Accordion>
         <AccordionSummary
-          // expandIcon={<IoIosArrowDropdownCircle />}
-          // aria-controls="panel2-content"
-          // id="panel2-header"
+          expandIcon={<IoIosArrowDropdownCircle />}
+          aria-controls="panel2-content"
+          id="panel2-header"
         >
           <Typography>Software Engineer - Android</Typography>
         </AccordionSummary>
@@ -206,7 +208,7 @@ font-bold tracking-widest">FAQ</h4>
             <p className="text-[#42526B] text-[14px]">Chief Chairman of <span className="text-[#7534FF]">Netflix</span></p>
           </div>
         </div>
-        <p>
+        <p className='text-[10px]'>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla nostrum saepe soluta sed aspernatur esse blanditiis praesentium eveniet iste quam, impedit ut inventore eum a aperiam officiis dicta ipsum?
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
@@ -225,7 +227,7 @@ font-bold tracking-widest">FAQ</h4>
             <p className="text-[#42526B] text-[14px]">Chief Chairman of <span className="text-[#7534FF]">Netflix</span></p>
           </div>
         </div>
-        <p>
+        <p className='text-[10px]'>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla nostrum saepe soluta sed aspernatur esse blanditiis praesentium eveniet iste quam, impedit ut inventore eum a aperiam officiis dicta ipsum?
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
@@ -244,7 +246,7 @@ font-bold tracking-widest">FAQ</h4>
             <p className="text-[#42526B] text-[14px]">Chief Chairman of <span className="text-[#7534FF]">Netflix</span></p>
           </div>
         </div>
-        <p>
+        <p className='text-[10px]'>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla nostrum saepe soluta sed aspernatur esse blanditiis praesentium eveniet iste quam, impedit ut inventore eum a aperiam officiis dicta ipsum?
         </p>
         <Image src="/client-logo.svg" alt="code" width={68} height={34} />
@@ -254,36 +256,36 @@ font-bold tracking-widest">FAQ</h4>
         </div>
       </div>
       <div className="mb-28">
-      <h1 className="font-bold text-[25px] text-center mt-80">
+      <h1 className="font-bold text-[25px] text-center  md:mt-28">
         Innovative Partnerships, Infinite Possibilities
       </h1>
       {/* <div
   className="animate-scroll"
   style={{ animation: "scroll 20s linear infinite" }}
 >  */}
-      <div className="h-[133.19px] flex justify-evenly flex-wrap mt-6 animate-horizontalMove">
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+      <div className="h-[133.19px]  flex justify-evenly flex-wrap mt-6 animate-horizontalMove">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn1.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn2.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn3.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn4.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn5.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn6.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn7.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
-        <div className="border border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
+        <div className="border animate-bounce border-[#C4C4C4] w-[106.73px] h-[52.1px] rounded-md p-4">
           <Image src="/prtn8.svg" alt="FAQ" width={106.73} height={52.1} />
         </div>
         {/* </div> */}
