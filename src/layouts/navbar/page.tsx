@@ -11,11 +11,11 @@ const pathname = usePathname()
 
   return (
     <div className=' text-white flex justify-between items-center bg-[#000] w-screen overflow-x-auto'>
-      <Link className='flex justify-between px-4 py-4 ' href="/">
-        <Image src="/Tech.png" 
+      <Link className='flex justify-between ' href="/">
+        <Image  src="/Tech.png" 
         alt='Tech Spark Logo'
-        height={70}
-        width={85}
+        height={105}
+        width={105}
         priority
      
      />
