@@ -10,7 +10,6 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-<<<<<<< HEAD
     <div className='text-white flex justify-between items-center bg-[#000] w-screen overflow-x-auto'>
       <Link className='flex justify-between px-4 py-4' href="/">
         <Image 
@@ -20,17 +19,6 @@ const Navbar = () => {
           width={85}
           priority
         />
-=======
-    <div className=' text-white flex justify-between items-center bg-[#000] w-screen overflow-x-auto'>
-      <Link className='flex justify-between ' href="/">
-        <Image  src="/Tech.png" 
-        alt='Tech Spark Logo'
-        height={105}
-        width={105}
-        priority
-     
-     />
->>>>>>> d5719222eea167df9de646efb80586a0474542f9
       </Link>
       <div className='hidden sm:flex sm:justify-between sm:gap-4'>
         <Link  className={`${pathname === "/" ? 'text-[#FF7F0E]' : "text-white"} hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300`}  href="/"  >HOME</Link>
