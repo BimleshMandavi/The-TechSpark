@@ -90,7 +90,8 @@ const FooterPage = () => {
       </div>
     
 
-<div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen'>
+{/* <div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen'> */}
+<div className='hidden md:flex flex-col gap-[40px] flex-wrap w-screen mb-0'>
 
       <div className='md:flex  h-[276px] md:justify-between items-center px-10 pt-1 flex-wrap'>
          <div className='flex flex-col gap-4 flex-wrap'>
@@ -153,11 +154,11 @@ const FooterPage = () => {
          </div>
          <div className='flex flex-col gap-3 flex-wrap'>
           <h1 className='text-[#FF7F0E] text-xl'>Company</h1>
-          <Link href="/about" className='hover:text-purple-600'>About Us</Link>
-          <Link href="/carrier" className='hover:text-blue-500'>Careers</Link>
-          <Link href="/services" className='hover:text-sky-400'>Services</Link>
-          <Link href="/contact" className='hover:text-blue-500'>Contact Us</Link>
-          <Link href="/blog" className='hover:text-sky-400'>Blog</Link>
+          <Link href="/about" className='hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300'>About Us</Link>
+          <Link href="/carrier" className='hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300'>Careers</Link>
+          <Link href="/services" className='hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300'>Services</Link>
+          <Link href="/contact" className='hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300'>Contact Us</Link>
+          <Link href="/blog" className='hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300'>Blog</Link>
          </div>
          <div className='flex flex-col gap-3'>
           <h1 className='text-[#FF7F0E] text-xl'>Our Services</h1>
@@ -172,7 +173,7 @@ const FooterPage = () => {
           <div className='flex flex-col items-start'>
           <input className='w-[342px] sm:w-full h-[54px] hover:border-orange-400 p-4 text-black cursor-pointer rounded-sm' type="email" placeholder='Type email hare...' />
           </div>
-            <button className='text-[18px] font-semibold Inter  bg-[#0C487B] hover:text-red-500 w-[138px] sm:w-full h-[54px] text-center rounded cursor-pointer'>Subscribe</button>
+            <button className='text-[18px] font-semibold Inter  bg-[#0C487B] hover:bg-white hover:text-red-500 w-[138px] sm:w-full h-[54px] text-center rounded cursor-pointer'>Subscribe</button>
          </div>
       </div>
       <hr/>

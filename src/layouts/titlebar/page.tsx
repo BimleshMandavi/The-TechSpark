@@ -9,7 +9,7 @@ const Nav2 = () => {
   className="animate-scroll "
   style={{ animation: "scroll 20s linear infinite" }}
 >
-  <ul className="list-disc text-white  flex items-center justify-center gap-80">
+  <ul className="list-disc text-white text-lg  flex items-center justify-center gap-80">
     <li className="text-md text-center">
       Make Your Business Online With Us in Your Budget.
     </li>

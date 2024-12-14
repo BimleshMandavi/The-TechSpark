@@ -1,9 +1,10 @@
-"use client"
-import Image from 'next/image'
-import React from 'react'
-import Template from '../Template'
-import {motion} from 'framer-motion'
-
+"use client";
+import Image from 'next/image';
+import React,{useEffect} from 'react';
+import Template from '../Template';
+import {motion} from 'framer-motion';
+// import typed from 'typed.js';
+import Typed from 'typed.js';
 import {Variants } from "framer-motion";
 
 const fadeInUpAnimation: Variants = {
@@ -22,8 +23,31 @@ const fadeInUpAnimation: Variants = {
 };
 
 
-
 const AboutPage = () => {
+
+
+  
+useEffect(() => {
+  const typed = new Typed('#typed-element', {
+    strings: [
+      'HTML5',
+      'TAILWIND CSS',
+      'JAVASCRIPT',
+      'NODE.JS',
+      'REACT.JS',
+      'NEXT.JS',
+      'MongoDB',
+      'MySQL',
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true,
+  });
+
+  return () => {
+    typed.destroy();
+  };
+}, []);
   return (
     <Template>
     <div className='w-screen h-full mt-28'>
@@ -31,14 +55,21 @@ const AboutPage = () => {
       <div className="absolute w-full inset-0 bg-black bg-opacity-85 sm:bg-opacity-70" />
       <div className="relative flex items-center  h-full  ml-4 text-start sm:px-8 mt-20">
         <div className="flex justify-between flex-col gap-1 mx-6">
-        <h4 className="text-[14px] text-[#FF7F0E]">Tech Spark</h4>
+        <h4 className="text-[14px] text-[#FF7F0E] mt-16">Tech Spark</h4>
         <h2 className="text-4xl font-bold">About Us</h2>
         <p className="max-w-2xl pt-5">
         Welcome to TechSpark IT Solutions, your dedicated partner in software development and IT consulting. We specialize in empowering startups and scale-ups to achieve their business goals through innovative technology solutions. Our mission is to transform your vision into reality, ensuring seamless scalability, enhanced customer experiences, and the creation of cutting-edge products and processes.
         </p>
+
+        <div className="sm:text-1xl md:text-1xl lg:text-1xl font-bold">
+        <p> Our using technology <span className='text-[#FF7F0E]' id="typed-element"></span></p>
+             
+            </div>
+
         <div className="mt-10 flex justify-between pr-3">
          <div className="w-[220px] h-[44px] flex justify-evenly items-center rounded cursor-pointer">
-           <a href='https://github.com/BimleshMandavi/The-TechSpark'>
+         {/* <a href='https://github.com/BimleshMandavi/The-TechSpark'> */}
+         <a href='/'>
            <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
