@@ -51,12 +51,11 @@ font-bold tracking-widest">FAQ</h4>
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Software Engineer - Android</Typography>
+          <Typography>What services does TechSpark offer?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            TechSpark offers a comprehensive range of Software Development services, including web development, mobile app development, custom software development, e-commerce solutions, CRM dashboard development, blockchain development, Crypto solutions and more Services.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -66,12 +65,11 @@ font-bold tracking-widest">FAQ</h4>
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Software Engineer - Android</Typography>
+          <Typography>How does TechSpark ensure client satisfaction?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+           At TechSpark, client satisfaction is our top priority. We achieve this by providing personalized solutions you can hire dedicated Full Stack web or App Developers Team tailored to each client's unique needs, ensuring clear communication throughout the project, and delivering high-quality work on time, every time.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -82,12 +80,11 @@ font-bold tracking-widest">FAQ</h4>
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Software Engineer - Android</Typography>
+          <Typography>What industries does TechSpark specialize in?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+           TechSpark specializes in serving a diverse range of industries, including healthcare, fintech, e-commerce, manufacturing, travel, hospitality, and more. Our expertise allows us to develop tailored solutions that meet the specific requirements of each industry.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -97,12 +94,11 @@ font-bold tracking-widest">FAQ</h4>
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Software Engineer - Android</Typography>
+          <Typography>Can I hire dedicated developers from TechSpark?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+           Yes, TechSpark offers dedicated developer hiring services for clients who require ongoing support or have long-term projects. Our dedicated developers work exclusively on your project, providing continuous support and expertise.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -112,12 +108,39 @@ font-bold tracking-widest">FAQ</h4>
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Software Engineer - Android</Typography>
+          <Typography>How does TechSpark handle project timelines?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            At TechSpark, we understand the importance of meeting project deadlines. We follow a structured project management approach, setting realistic timelines and milestones, and keeping clients informed of progress every step of the way.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+       <Accordion>
+        <AccordionSummary
+          expandIcon={<IoIosArrowDropdownCircle />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          <Typography>Does TechSpark offer support after the project is completed?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Yes, TechSpark provides ongoing support and maintenance services to ensure that your software remains up-to-date and functional. Our dedicated support team is available to address any issues or concerns that may arise post-launch.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+       <Accordion>
+        <AccordionSummary
+          expandIcon={<IoIosArrowDropdownCircle />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          <Typography>What sets TechSpark apart from other software development companies?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            TechSpark stands out for its commitment to on-time delivery, exceptional support, and innovative solutions. With a focus on client satisfaction and a track record of successful projects, we have earned a reputation as a trusted partner for businesses seeking transformative software solutions.
           </Typography>
         </AccordionDetails>
       </Accordion>

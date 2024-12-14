@@ -47,7 +47,7 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <div>
-      <div className="hidden lg:flex w-[113px] h-[744px]">
+      <div className="hidden lg:flex w-[113px] h-[744px] mt-12">
         <div className="flex flex-col justify-center items-center w-full gap-3">
           <Link href="https://wa.me/916265761531">
             <div className="hover:scale-110 hover:bg-[#34c358] p-2 rounded-full transition-all duration-300 ease-in-out">
