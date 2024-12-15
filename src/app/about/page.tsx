@@ -7,6 +7,7 @@ import {motion} from 'framer-motion';
 import Typed from 'typed.js';
 import {Variants } from "framer-motion";
 
+
 const fadeInUpAnimation: Variants = {
   hidden: {
     opacity: 0,
@@ -62,30 +63,35 @@ useEffect(() => {
         </p>
 
         <div className="sm:text-1xl md:text-1xl lg:text-1xl font-bold">
-        <p> Our using technology <span className='text-[#FF7F0E]' id="typed-element"></span></p>
+        <p> Our using technology <span className='text-[#FF7F0E] ml-3' id="typed-element"></span></p>
              
             </div>
+
+            
 
         <div className="mt-10 flex justify-between pr-3">
          <div className="w-[220px] h-[44px] flex justify-evenly items-center rounded cursor-pointer">
          {/* <a href='https://github.com/BimleshMandavi/The-TechSpark'> */}
-         <a href='/'>
+         {/* <a href='/'>
            <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
            className='px-4 py-2 bg-[#0C487B] text-white rounded-md'>
            EXPLORE OPENINGS
            </motion.button>
-           </a>
+           </a> */}
            </div>
         </div>
         </div>
+        
       </div>
     </div>
+   
     <div className=''>
+      
       <div className=' bg-[#000000] text-white '>
-         <div className='flex flex-col gap-5 px-6 sm:px-8 ml-4 '>
-          <h1 className='font-bold text-[28px]'>The Tech Spark Way</h1>
+         <div className='flex flex-col gap-5 px-6 sm:px-8 ml-4'>
+          <h1 className='font-bold text-[28px] mt-8'>The Tech Spark Way</h1>
           <div className='sm:flex'>
           <p className='sm:w-[735px] sm:p-5'>At TechSpark IT Solutions, we believe that the heart of exceptional tech teams lies in the people who compose them. Our mission is to create an inclusive environment where everyone, from introverts to extroverts, early risers to night owls, and analytical thinkers to creative minds, can thrive.</p>
           <p className='sm:w-[735px] sm:p-5'>Tech Spark Way transcends the traditional tech hiring platform. We offer an all-encompassing solution that empowers recruiters and engineering managers to seamlessly attract, evaluate, and onboard the best developers. Our advanced suite of virtual recruiting tools simplifies every step of the hiring process, from initial talent identification to final engagement. By combining cutting-edge technology with a human-centric approach, we help you build strong, cohesive teams poised for success.</p>

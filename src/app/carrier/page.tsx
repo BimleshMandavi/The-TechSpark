@@ -3,6 +3,7 @@
 
 "use client";
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -51,8 +52,8 @@ const services = [
     image: 'ServerPic.png',
   },
   {
-    title: 'Service Management',
-    description: 'Service Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.',
+    title: 'Server Management',
+    description: 'Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.',
     image: 'server_maintenance.svg',
   },
   
@@ -91,7 +92,9 @@ export default function Services() {
               className="bg-white shadow-md rounded-lg p-6  hover:shadow-zinc-500 transition transform hover:-translate-y-2"
               variants={fadeInUpAnimation}
             >
-              <img
+              <Image
+              height={24}
+              width={24}
                 src={service.image}
                 alt={service.title}
                 className="w-100% h-100% mx-auto rounded-sm mb-4"

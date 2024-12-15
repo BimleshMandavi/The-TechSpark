@@ -39,11 +39,10 @@
 //   },
 // ];
 
-
 // const ServiceGrid = () => {
 //   return (
 //     // <div className="w-full flex flex-wrap justify-between gap-7 lg:mx-5">
-//     <div className="w-full grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"> 
+//     <div className="w-full grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
 //     {serviceBlocks.map((block, index) => (
 //         <div
 //           key={index}
@@ -66,14 +65,9 @@
 
 // export default ServiceGrid;
 
-
-
-
-
-
-
 "use client";
-import { motion, Variants } from 'framer-motion';
+import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -92,41 +86,53 @@ const fadeInUpAnimation: Variants = {
 
 const services = [
   {
-    title: 'Web Development',
-    description: 'Building responsive and scalable websites tailored to your business needs.',
-    image: 'webPic.jpg',
+    title: "Web Development",
+    description:
+      "Building responsive and scalable websites tailored to your business needs.",
+    image: "webPic.jpg",
   },
   {
-    title: 'Mobile App Development',
-    description: 'Creating user-friendly mobile apps for Android and iOS platforms.',
-    image: 'UI_UX.jpg',
+    title: "Mobile App Development",
+    description:
+      "Creating user-friendly mobile apps for Android and iOS platforms.",
+    image: "UI_UX.jpg",
   },
   {
-    title: 'SEO Optimization',
-    description: 'Improving your website’s visibility on search engines with modern SEO techniques.',
-    image: 'seo.svg',
+    title: "SEO Optimization",
+    description:
+      "Improving your website’s visibility on search engines with modern SEO techniques.",
+    image: "seo.svg",
   },
   {
-    title: 'UI/UX Designing',
-    description: 'Design stunning, user-friendly interfaces with Figma, Sketch, and Adobe XD. Our UI/UX solutions improve engagement and satisfaction across websites, mobile apps, and other digital products.',
-    image: 'ui_ux_design.svg',
+    title: "UI/UX Designing",
+    description:
+      "Design stunning, user-friendly interfaces with Figma, Sketch, and Adobe XD. Our UI/UX solutions improve engagement and satisfaction across websites, mobile apps, and other digital products.",
+    image: "ui_ux_design.svg",
   },
   {
-    title: 'LOGO Design',
-    description: "Logo design for a web development company involves creating a visually striking and memorable symbol that reflects the company's brand identity, professionalism, and innovation in the digital space.",
-    image: 'LogoDesign.jpeg',
+    title: "LOGO Design",
+    description:
+      "Logo design for a web development company involves creating a visually striking and memorable symbol that reflects the company's brand identity, professionalism, and innovation in the digital space.",
+    image: "LogoDesign.jpeg",
   },
   {
-    title: 'Cloud Services',
-    description: 'Seamless cloud integration and management for your applications.',
-    image: 'ServerPic.png',
+    title: "Cloud Services",
+    description:
+      "Seamless cloud integration and management for your applications.",
+    image: "ServerPic.png",
   },
   {
-    title: 'Service Management',
-    description: 'Service Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.',
-    image: 'server_maintenance.svg',
+    title: "Server Management",
+    description:
+      "Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.",
+    image: "server_maintenance.svg",
   },
-  
+  {
+    title: "Custom Dashbords & CRMs",
+    description:
+      "Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.",
+    image: "dash-crm.svg",
+  },
 ];
 
 export default function Services() {
@@ -139,10 +145,11 @@ export default function Services() {
         variants={fadeInUpAnimation}
       >
         <motion.h1 className="text-4xl font-bold text-blue-600 mb-4">
-           Services
+          Top Best Services
         </motion.h1>
         <motion.p className="text-lg text-gray-600 mb-8">
-          We provide a wide range of services to help your business thrive in the digital era.
+          We provide a wide range of services to help your business thrive in
+          the digital era.
         </motion.p>
         <div className="m-5 pt-5">
           <motion.a
@@ -153,7 +160,7 @@ export default function Services() {
           </motion.a>
         </div>
         <motion.div
-          className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-16"
           variants={fadeInUpAnimation}
         >
           {services.map((service, index) => (
@@ -162,9 +169,11 @@ export default function Services() {
               className="bg-white shadow-md rounded-lg p-6  hover:shadow-zinc-500 transition transform hover:-translate-y-2"
               variants={fadeInUpAnimation}
             >
-              <img
-                src={service.image}
+              <Image
+                src={`/${service.image}`} // Adding forward slash to indicate images are in public directory
                 alt={service.title}
+                width={95}
+                height={95}
                 className="w-100% h-100% mx-auto rounded-sm mb-4"
               />
               <motion.h3

@@ -11,6 +11,7 @@ import Work_cards from '../cards/work_cards';
 import Services_card from '../cards/services_cards';
 // import carrier from 'src/app/carrier'
 import{motion} from 'framer-motion'
+import Link from 'next/link';
 
 const Case_study = () => {
   return (
@@ -28,12 +29,14 @@ const Case_study = () => {
         <h1 className="text-black font-bold text-[25px] sm:text-[50px]">Driving Success: A Tech Spark Case Study</h1>
         <p className="sm:text-[18px] ">Welcome to a journey of innovation and success with Tech Spark. In our latest case study, we delve into the transformative partnership with [Client Company], showcasing a remarkable story of overcoming challenges and achieving unprecedented results. From the initial hurdles to the triumphant outcomes, this case study unveils the impact of [Your Product/Service] in [Client Industry]. Discover how our tailored solutions, strategic approach, and collaborative efforts propelled [Client Company] to new heights, setting a benchmark for excellence in their sector. Join us as we explore the intricate details of this success story, demonstrating the power of innovation and the tangible benefits experienced by our valued client. This is more than just a case study; it's a testament to the potential of partnership and the possibilities that unfold when visionary companies come together to create meaningful change.</p>
       </div>
+      <Link href={"/blog"} >
         <motion.div 
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
-        className="w-[220px] h-[44px] bg-[#0C487B] border hover:border-blue-600 hover:bg-white mt-4 flex justify-evenly items-center rounded text-white">
+        className="w-[220px] h-[44px] bg-[#0C487B] border hover:border-blue-600 hover:bg-white mt-16 flex justify-evenly items-center rounded text-white ">
            <button className="text-white hover:text-black">LEARN MORE...</button>
          </motion.div>
+         </Link>
          </div>
       </div>
     
@@ -47,11 +50,11 @@ font-bold tracking-widest">FAQ</h4>
         <div className="py-3 sm:w-[50%]">
           <Image className="sm:w-full sm:h-full" src="/faq.svg" alt="FAQ" width={471.73} height={219.1} />
         </div>
-        <div className="flex sm:flex-col">
-        <div className="">
+        <div className=" sm:flex-col w-[50%]">
+        <div className="mx-6">
            <div className="flex flex-col gap-2 py-2">
-         <Accordion>
-        <AccordionSummary
+         <Accordion className='w-full'>
+        <AccordionSummary 
           expandIcon={<IoIosArrowDropdownCircle />}
           aria-controls="panel2-content"
           id="panel2-header"
@@ -151,7 +154,7 @@ font-bold tracking-widest">FAQ</h4>
       </Accordion>
     </div>
         </div>
-        <div>
+        {/* <div>
            <Accordion>
          <AccordionDetails>
       <ul className="list-disc pl-4 space-y-2"> 
@@ -162,27 +165,29 @@ font-bold tracking-widest">FAQ</h4>
       </ul>
     </AccordionDetails>
       </Accordion>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-2 py-2">
           
         </div>
         </div>
         </div>
       </div>
-      <div className="sm:flex justify-center">
+      <div className="sm:flex justify-center mt-5">
          <div className="sm:w-[50%]">
          <Image className="sm:w-full sm:h-full" src="/energy-startup.svg" alt="startup" width={471.73} height={219.1} />
          </div>
-         <div className="bg-[#0C487B] sm:w-[50%]  text-white h-[200px] sm:h-[370px] flex flex-col justify-center items-center text-center">
-          <h1 className="font-bold text-[28px]">Energy of a start-up combined with 30 years of experience.</h1>
+         <div className="bg-[#71347dc0] sm:w-[50%]  text-white h-[200px] sm:h-[408px] flex flex-col justify-center items-center text-center">
+          <h1 className="font-bold text-[28px] px-1">Energy of a start-up combined with 6+ years of experience.</h1>
           <div>
+            <Link href={"/about"}>
             <motion.button 
            whileHover={{scale:1.1}}
            whileTap={{scale:0.9}}
            className=" sm:flex sm:justify-center mb-6 bg-white  text-[#FF7F0E] rounded-3xl sm:w-[200px] text-center sm:h-[50px] sm:mt-4"
            >  
-            <p className='mt-3 mb-4 md:text-lg sm:text-[10px] text-sm'>See Job Vacancies</p> 
+            <p className='mt-3 mb-4 md:text-lg sm:text-[10px] text-sm'>More About Us</p> 
            </motion.button>
+           </Link>
           </div>
          </div>
       </div>
