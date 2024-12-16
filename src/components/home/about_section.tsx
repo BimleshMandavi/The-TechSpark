@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { FaPlayCircle } from 'react-icons/fa';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const AboutSection = () => {
   useEffect(() => {
@@ -52,17 +53,11 @@ const AboutSection = () => {
                   whileTap={{ scale: 0.9 }}
                   className="text-[12px] h-[44px] bg-[#0C487B] flex justify-evenly p-2 items-center rounded cursor-pointer gap-2"
                 >
-                  <FaPlayCircle />
-                  SWIPE TO THIS VIDEO
+                  <Link href="/contact">Contact to TechSpark</Link>
+                  
                 </motion.button>
               </div>
-              <motion.button 
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="text-[12px] h-[44px] border border-white bg-[#000000] flex justify-center items-center rounded text-center sm:px-3 hover:bg-white hover:text-black mx-4"
-              >
-                WE ARE HIRING
-              </motion.button>
+              
             </div>
           </div>
           {/* <div className=' animate-pulse'>

@@ -68,6 +68,7 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import ServiceSlides from "@/components/ui/serviceSlider"
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -84,56 +85,56 @@ const fadeInUpAnimation: Variants = {
   },
 };
 
-const services = [
-  {
-    title: "Web Development",
-    description:
-      "Building responsive and scalable websites tailored to your business needs.",
-    image: "webPic.jpg",
-  },
-  {
-    title: "Mobile App Development",
-    description:
-      "Creating user-friendly mobile apps for Android and iOS platforms.",
-    image: "UI_UX.jpg",
-  },
-  {
-    title: "SEO Optimization",
-    description:
-      "Improving your website’s visibility on search engines with modern SEO techniques.",
-    image: "seo.svg",
-  },
-  {
-    title: "UI/UX Designing",
-    description:
-      "Design stunning, user-friendly interfaces with Figma, Sketch, and Adobe XD. Our UI/UX solutions improve engagement and satisfaction across websites, mobile apps, and other digital products.",
-    image: "ui_ux_design.svg",
-  },
-  {
-    title: "LOGO Design",
-    description:
-      "Logo design for a web development company involves creating a visually striking and memorable symbol that reflects the company's brand identity, professionalism, and innovation in the digital space.",
-    image: "LogoDesign.jpeg",
-  },
-  {
-    title: "Cloud Services",
-    description:
-      "Seamless cloud integration and management for your applications.",
-    image: "ServerPic.png",
-  },
-  {
-    title: "Server Management",
-    description:
-      "Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.",
-    image: "server_maintenance.svg",
-  },
-  {
-    title: "Custom Dashbords & CRMs",
-    description:
-      "Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.",
-    image: "dash-crm.svg",
-  },
-];
+// const services = [
+//   {
+//     title: "Web Development",
+//     description:
+//       "Building responsive and scalable websites tailored to your business needs.",
+//     image: "webPic.jpg",
+//   },
+//   {
+//     title: "Mobile App Development",
+//     description:
+//       "Creating user-friendly mobile apps for Android and iOS platforms.",
+//     image: "UI_UX.jpg",
+//   },
+//   {
+//     title: "SEO Optimization",
+//     description:
+//       "Improving your website’s visibility on search engines with modern SEO techniques.",
+//     image: "seo.svg",
+//   },
+//   {
+//     title: "UI/UX Designing",
+//     description:
+//       "Design stunning, user-friendly interfaces with Figma, Sketch, and Adobe XD. Our UI/UX solutions improve engagement and satisfaction across websites, mobile apps, and other digital products.",
+//     image: "ui_ux_design.svg",
+//   },
+//   {
+//     title: "LOGO Design",
+//     description:
+//       "Logo design for a web development company involves creating a visually striking and memorable symbol that reflects the company's brand identity, professionalism, and innovation in the digital space.",
+//     image: "LogoDesign.jpeg",
+//   },
+//   {
+//     title: "Cloud Services",
+//     description:
+//       "Seamless cloud integration and management for your applications.",
+//     image: "ServerPic.png",
+//   },
+//   {
+//     title: "Server Management",
+//     description:
+//       "Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.",
+//     image: "server_maintenance.svg",
+//   },
+//   {
+//     title: "Custom Dashbords & CRMs",
+//     description:
+//       "Server Management for a web development company involves efficiently overseeing and delivering web-based services, including development, maintenance, and support. It ensures smooth project execution, quality assurance, and timely updates to meet client needs and expectations.",
+//     image: "dash-crm.svg",
+//   },
+// ];
 
 export default function Services() {
   return (
@@ -159,39 +160,9 @@ export default function Services() {
             Contact Us
           </motion.a>
         </div>
-        <motion.div
-          className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-16"
-          variants={fadeInUpAnimation}
-        >
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              className="bg-white shadow-md rounded-lg p-6  hover:shadow-zinc-500 transition transform hover:-translate-y-2"
-              variants={fadeInUpAnimation}
-            >
-              <Image
-                src={`/${service.image}`} // Adding forward slash to indicate images are in public directory
-                alt={service.title}
-                width={95}
-                height={95}
-                className="w-100% h-100% mx-auto rounded-sm mb-4"
-              />
-              <motion.h3
-                className="text-xl font-semibold mb-2 text-blue-600"
-                variants={fadeInUpAnimation}
-              >
-                {service.title}
-              </motion.h3>
-              <motion.p
-                className="text-gray-600 text-start"
-                variants={fadeInUpAnimation}
-              >
-                {service.description}
-              </motion.p>
-            </motion.div>
-          ))}
-        </motion.div>
+        
       </motion.div>
+      <ServiceSlides />
     </div>
   );
 }

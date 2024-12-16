@@ -95,7 +95,7 @@ export default function Services() {
               <Image
               height={24}
               width={24}
-                src={service.image}
+                src={`/${service.image}`}
                 alt={service.title}
                 className="w-100% h-100% mx-auto rounded-sm mb-4"
               />
