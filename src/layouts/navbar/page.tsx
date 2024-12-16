@@ -27,16 +27,18 @@ const Navbar = () => {
         <Link className={`${pathname === "/carrier" ? 'text-[#FF7F0E]' : "text-white"} hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300`} href="/carrier">SERVICES</Link>
         <Link className={`${pathname === "/contact" ? 'text-[#FF7F0E]' : "text-white"} hover:text-sky-400 hover:shadow-md hover:shadow-sky-400 transition-all duration-300`} href="/contact">CONTACT US</Link>
       </div>
-      <div className='my-5 mx-5'>
+      <div className='my-5 mx-5 md:mr-10'>
         <Link 
-          className={`${pathname === "/contact" ? 'text-[#ef6344d6]' : "text-white"} hover:shadow-md hover:shadow-sky-400 transition-all duration-300`} 
+          className=""
           href="/contact"
         >
-          <Box sx={{ '& > :not(style)': { m: 1 } }}>
-            <Fab variant="extended" size="medium" color="primary">
-              Get Started
-            </Fab>
-          </Box>
+          <Image  className=''
+          src="/start.gif" 
+          alt='Start Button'
+          height={140}
+          width={140}
+          priority
+        />
         </Link>
       </div>
     </div>
