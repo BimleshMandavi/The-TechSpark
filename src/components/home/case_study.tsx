@@ -176,7 +176,7 @@ font-bold tracking-widest">FAQ</h4>
          <div className="sm:w-[50%]">
          <Image className="sm:w-full sm:h-full" src="/energy-startup.svg" alt="startup" width={471.73} height={219.1} />
          </div>
-         <div className="bg-[#71347dc0] sm:w-[50%]  text-white h-[200px] sm:h-[408px] flex flex-col justify-center items-center text-center">
+         <div className="bg-[#bcd2d2c0] sm:w-[50%]  text-white h-[200px] sm:h-[408px] flex flex-col justify-center items-center text-center">
           <h1 className="font-bold text-[28px] px-1">Energy of a start-up combined with 6+ years of experience.</h1>
           <div>
             <Link href={"/about"}>

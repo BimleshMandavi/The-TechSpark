@@ -29,7 +29,7 @@ const BlogPage = () => {
         <div className=' h-[528px] flex flex-col justify-center sm:pl-10  inset-0 bg-black bg-opacity-40 px-6'>
           <div className='sm:w-[650px] absolute top-[280px] sm:left-[110px] '>
             <h4 className='text-[16px] text-[#0C487B] w-[142px] h-[24px]'>LATEST BLOGS</h4>
-          <h1 className='text-[30px] font-black  hover:text-purple-600'>Blog & News</h1>
+          <h1 className='text-[30px] font-black  hover:text-white'>Blog & News</h1>
           <div className='text-[16px]'>
             <motion.div
             initial={{opacity:0, y:100}}
@@ -235,7 +235,7 @@ const BlogPage = () => {
         <div className='sm:w-[50%]'>
           <Image className='sm:w-full' src="/grp-img5.svg" width={429} height={204} alt='grp' />
         </div>
-        <div className='bg-[#0C487B] h-[200px] sm:h-[397px] sm:w-[50%]'>
+        <div className='bg-[#1a07a7] h-[200px] sm:h-[397px] sm:w-[50%]'>
           <h1 className='text-[28px] font-bold w-[390px] h-[114px] p-4'>Energy of a start-up combined with 30 years of experience.</h1>
         </div>
       </div>

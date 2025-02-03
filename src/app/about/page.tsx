@@ -63,7 +63,7 @@ useEffect(() => {
         </p>
 
         <div className="sm:text-1xl md:text-1xl lg:text-1xl font-bold">
-        <p> Our using technology <span className='text-[#FF7F0E] ml-3' id="typed-element"></span></p>
+        <p> Our using technology <span className='text-[#ed8926] ml-3' id="typed-element"></span></p>
              
             </div>
 
@@ -89,7 +89,7 @@ useEffect(() => {
    
     <div className=''>
       
-      <div className=' bg-[#000000] text-white '>
+      <div className=' bg-[rgb(24,29,31)] text-white'>
          <div className='flex flex-col gap-5 px-6 sm:px-8 ml-4'>
           <h1 className='font-bold text-[28px] mt-8'>The Tech Spark Way</h1>
           <div className='sm:flex'>
@@ -101,9 +101,9 @@ useEffect(() => {
         <Image className='sm:w-[1614px] sm:h-[538px] p-8' src='/leaders.svg' alt='lead' height={132} width={496} />
       </div>
       </div>
-      <div className=' bg-[#000000] text-white sm:pt-[273px] sm:px-7 sm:flex py-8 mt-48'>
+      <div className=' bg-[#151515] text-white sm:pt-[273px] sm:px-7 sm:flex py-8 mt-48'>
         <div className='pt-[210px] flex flex-col gap-3 px-5'>
-          <h4 className='text-[11px] text-[#FF7F0E]'>BACKGROUND</h4>
+          <h4 className='text-[11px] text-[#ec8c24]'>BACKGROUND</h4>
          <div className='text-[28px]'> <h1 className='font-bold '>The purpose</h1>
           <h1>Of the program</h1></div>
           <p>TechSpark IT Solutions is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks to a powerful suite of virtual recruiting tools that help identify, assess, interview and engage developers.</p>
@@ -142,7 +142,7 @@ useEffect(() => {
     </ul>
  </div>
  </div>
-      <div className='bg-[#0C487B]  h-[609px] sm:h-[438px] text-white py-5 px-5 flex justify-around flex-col sm:flex-row'>
+      <div className='bg-[#f1f4f8]  h-[609px] sm:h-[438px] text-white py-5 px-5 flex justify-around flex-col sm:flex-row'>
         <div className='sm:w-[707px]'>
           <h5 className='text-[12px] font-semibold'>OUR MISSION</h5>
           <h1 className='font-bold text-[28px]'>Bringing Your Business into the Digital Age</h1>
@@ -276,9 +276,9 @@ damping: 10,
       </li>
     </ul>
       </div>
-      <div className='bg-[#050505]  text-white px-8 '>
+      <div className='bg-[#b0a1a1]  text-white px-8 '>
         <div className='pt-5'>
-          <h5 className='text-[#FF7F0E] text-[12px]'>OUR TEAM</h5>
+          <h5 className='text-[#d1d9e3] text-[12px]'>OUR TEAM</h5>
           <h1 className='font-black text-[28px]'>Meet Our</h1>
           <span className='text-[28px] font-normal'>Best Teams</span>
           <p className='text-[14px] font-medium pt-4'>ThinkHumble is a tech hiring platform that helps recruiters and engineering managers effortlessly hire the best developers thanks</p>
@@ -476,3 +476,7 @@ export default AboutPage
 // //     </div>
 // //   );
 // // }
+
+
+
+

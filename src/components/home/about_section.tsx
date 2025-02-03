@@ -44,7 +44,7 @@ const AboutSection = () => {
             </div>
             <p className="max-w-2xl pt-5">
               Hire the best software developers and a dedicated team of full-stack web developers, Mobile App (Android and iOS) Developers. 
-              Our team excels in providing expert solutions across a range of web technologies, including HTML5, Node.js, ReactJS, Next.js, MongoDB, and MySQL.
+              Our team excels in providing expert solutions across a range of web technologies, including HTML5, Tailwind css, Node.js, React.js, Next.js, MongoDB, and MySQL.
             </p>
             <div className="mt-10 flex justify-between w-full">
               <div>

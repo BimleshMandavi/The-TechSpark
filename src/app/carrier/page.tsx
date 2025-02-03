@@ -28,7 +28,7 @@ const services = [
   },
   {
     title: 'Mobile App Development',
-    description: 'Creating user-friendly mobile apps for Android and iOS platforms.',
+    description: 'Creating user-friendly mobile appss for Android and iOS platforms.',
     image: 'UI_UX.jpg',
   },
   {
